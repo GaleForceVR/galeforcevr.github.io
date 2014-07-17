@@ -1,0 +1,111 @@
+body {
+	background-color: red;
+	font-size: 100%;
+}
+
+p, li, h2, h3, h4, h5, h6 {
+	margin-left: 40px;
+}
+
+p {
+	margin-right: 30px;
+}
+
+#post-title {
+	background-color: yellow;
+	font-size: 2.5em;
+	margin: 10px 20px 10px 40px;
+	padding: 20px;
+	display: inline-block;
+}
+
+.description {
+	font-style: italic;
+	font-family: Arial, Verdana, Sans-Serif;
+	font-size: 1.5em;
+}
+
+#main-headline {
+	font-family: Verdana, Sans-Serif;
+	text-shadow: 1px 1px 2px #F7AE99;
+	clear: both;
+	
+}
+
+.featured {
+	width: 55%;
+	display: inline-block;
+	float: left;
+	margin: 0 40px 40px 0;
+}
+
+.secondary img {
+	width: 40%;
+	display: inline-block;
+	float: left;
+	margin: 0 40px 40px 0;
+}
+
+.h-4 {
+	clear: both;
+}
+
+#special {
+	padding: 10px 0;
+}
+
+#special a {
+	text-decoration: none;
+	color: black;
+	padding: 10px 40px;
+}
+
+#special a:hover {
+	background-color: black;
+	padding: 10px 20px;
+	color: yellow;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.email {
+	background-color: yellow;
+/*	font-size: 2.5em;*/
+	margin: 10px 20px 10px 40px;
+	padding: 20px;
+	display: inline-block;
+}
+
+.email a {
+	padding: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+.email a:hover {
+	background-color: black;
+	color: yellow;
+}
+
+.un-ordered {
+	display: inline-block;
+	list-style-type: none;
+	float: left;
+	background-color: yellow;
+	padding: 10px 40px;
+	margin-bottom: 30px;
+}
+
+.ordered {
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
