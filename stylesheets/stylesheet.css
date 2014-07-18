@@ -1,0 +1,160 @@
+body {
+	background-color: #f0f0f0;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+
+.gale {
+	position: fixed;
+	top: -250px;
+	/*right: -75%;*/
+	/*right: -1100px;*/
+	right: -900px;
+/*	width: 90%;
+	height: 90%;*/
+	width: 1800px;
+	height: 1865px;
+	background-image: url('../images/gray-scale-gale.png');
+	/*background-size: 1158px 1200px;*/
+	background-size: 1600px 1658px;
+	/*background-position: 150% 0;*/
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;*/
+	z-index: -1;
+	overflow: hidden;
+}
+
+a, li, ul, ol {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+img {
+	width: 100px;
+	height: 100px;
+}
+
+.main-nav {
+	position: relative;
+	left: 0;
+	top: 30px;
+	background-color: red;
+	height: 30px;
+	width: 60%;
+	padding: 0;
+}
+
+.main-nav ul {
+	background-color: #dcdcdc;
+	width: 50%;
+	height: 30px;
+	margin: 0;
+	padding-left: 50%;
+}
+
+.main-nav ul li {
+	display: inline-block;
+	list-style: none;
+	background-color: gray;
+	height: 30px;
+}
+
+header {
+	/*display: block;*/
+	/*background-color: green;*/
+	width: 100%;
+	height: 100px;
+	/*position: relative;*/
+	/*left: 0;
+	top: 0;*/
+}
+
+.social {
+	position: relative;
+	height: 50px;
+	width: 200px;
+	left: 65%;
+	top: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.social ul li {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+
+/*.social ul li a {
+*/	/*display: inline-block;*/
+/*	width: 20px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+}*/
+
+.social ul li a img {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	float: left;
+}
+
+#content {
+	max-width: 45%;
+	margin: 0 auto;
+}
+
+.blog-post-title {
+	margin-top: 50px;
+	font-size: 3em;
+}
+
+.feature {
+	width: 100%;
+	background: black;
+	margin: 0;
+	padding: 0;
+}
+
+.feature img {
+	background: blue;
+	width: 95%;
+	height: auto;
+	margin: 2.5% 2.5% 5% 2.5%;
+	border: 0;
+	padding: 0;
+}
+
+.story {
+	background: white;
+	/*margin: 5%;*/
+}
+
+.inner-wrapper {
+	padding: 5%;
+}
+
+.sub-headline {
+	margin: 2.5% 5% 5% 0;
+	padding: 0;
+}
+
+.sub-headline {
+	margin: 0;
+	padding: 0;
+	font-size: 1.7em;
+}
+
+aside {
+	position: fixed;
+	top: 275px;
+	left: 60px;
+	background-color: #dcdcdc;
+	width: 18%;
+	height: 500px;
+}
+
+
+
