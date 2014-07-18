@@ -132,7 +132,8 @@ header {
 
 .blog-post-title {
 	margin-top: 20px;
-	font-size: 3em;
+	font-size: 2.25em;
+	padding-right: 15%;
 }
 
 .feature {
@@ -177,6 +178,10 @@ header {
 	margin: 0;
 	padding: 0;
 	font-size: 1.7em;
+}
+
+.one-time li {
+	list-style-type: upper-roman;
 }
 
 aside {
