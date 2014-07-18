@@ -144,11 +144,19 @@ header {
 
 .feature img {
 	background: blue;
-	width: 95%;
+	width: 90%;
 	height: auto;
-	margin: 2.5% 2.5% 5% 2.5%;
+	margin: 5% 5% 5% 5%;
 	border: 0;
 	padding: 0;
+}
+
+.feature-caption {
+	position: relative;
+	top: -10px;
+	color: #34dcd2;
+	margin: 0;
+	padding: 0 30px 10px 5%;
 }
 
 .story {
