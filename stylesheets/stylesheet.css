@@ -44,7 +44,7 @@ a {
 	position: fixed;
 	top: 20px;
 	left: 20px;
-	width: 24%;
+	width: 22%;
 	z-index: 10;
 }
 
@@ -255,5 +255,164 @@ aside {
 	height: 500px;
 }
 
+@media (max-width: 1500px) {
+	#content {
+	max-width: 55%;
+/*	margin: 0 auto;*/
+	}
+
+	.logo a img {
+		/*position: fixed;*/
+		top: 10px;
+		left: 10px;
+		width: 18%;
+		/*z-index: 10;*/
+	}
+
+	aside {
+		/*position: fixed;*/
+		top: 250px;
+		left: 2.5%;
+		/*background-color: #dcdcdc;*/
+		width: 17%;
+		/*height: 500px;*/
+	}
+}
+
+@media (max-width: 1300px) {
+	#content {
+	max-width: 55%;
+/*	margin: 0 auto;*/
+	}
+
+	.logo a img {
+		/*position: fixed;*/
+		top: 10px;
+		left: 10px;
+		width: 18%;
+		/*z-index: 10;*/
+	}
+
+	aside {
+		/*position: fixed;*/
+		top: 250px;
+		left: 2.5%;
+		/*background-color: #dcdcdc;*/
+		width: 17%;
+		/*height: 500px;*/
+	}
+}
+
+@media (max-width: 1200px) {
+	#content {
+	max-width: 75%;
+/*	margin: 0 auto;*/
+	margin: 0 auto 0 0;
+	float: left;
+	}
+
+	.gale {
+		top: -215px;
+	}
+
+	.logo a img {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 170px;
+		/*z-index: 10;*/
+	}
+
+	.main-nav {
+		/*position: relative;
+		left: 0;
+		top: 30px;
+		height: 30px;
+		width: 60%;
+		padding: 0;*/
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 50px;
+		width: 100%;
+	}
+
+	.main-nav ul {
+		/*background-color: #dcdcdc;
+		width: 40%;
+		height: 30px;
+		margin: 0;
+		padding-left: 50%;*/
+		height: 50px;
+		width: 100%;
+		padding-left: 200px;
+	}
+
+	.main-nav ul li {
+		/*display: inline-block;
+		list-style: none;
+		height: 30px;*/
+	}
+
+	.main-nav ul li a {
+		/*position: relative;
+		top: 6px;
+		height: 30px;
+		padding: 10px 20px;
+		font-size: 14px;
+		color: #969595;*/
+		font-size: 16px;
+		top: 16px;
+	}
+
+	.main-nav ul li a:hover {
+		/*background-color: #34dcd2;
+		color: black;*/
+	}
+
+	.social {
+		display: none;
+	}
+
+	.blog-post-title {
+		/*margin-top: 20px;
+		font-size: 2.25em;
+		padding-right: 15%;*/
+		/*margin: 50px 10px 0 10%;*/
+		margin-top: 50px;
+		margin-left: 5%;
+	}
+
+	aside {
+		position: static;
+		clear: both;
+		/*top: 250px;*/
+		/*left: 2.5%;*/
+		/*background-color: #dcdcdc;*/
+		width: 75%;
+		/*height: 500px;*/
+	}
+}
+
+@media (max-width: 999px) {
+		#content {
+			max-width: 100%;
+		/*	margin: 0 auto;*/
+			margin: 0 0 0 0;
+			float: left;
+		}
+
+		.gale {
+			top: -230px;
+		}
+
+		.story {
+			background: none;
+		}
+
+		aside {
+			width: 100%;
+		}
+}
 
 
