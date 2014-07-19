@@ -202,9 +202,31 @@ header {
 	padding: 0;
 }
 
+.article-img-right {
+		display: inline-block;
+	width: 50%;
+	background: black;
+	margin: 5% 0 5% 5%;
+	padding: 0;
+	float: right;
+}
+
+.article-img-right img {
+	float: right;
+	width: 90%;
+	height: auto;
+	margin: 5% 5% 5% 5%;
+	border: 0;
+	padding: 0;
+}
+
 .left {
 	float: left;
 }
+/*}
+.img-right p {
+	float: right;
+}*/
 
 .article-img-caption {
 	position: relative;
