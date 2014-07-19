@@ -416,7 +416,7 @@ aside {
 		}
 }
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
 		body {
 			max-width: 767px;
 			width: 767px;
@@ -432,5 +432,12 @@ aside {
 			width: 360px;
 		}
 }
+
+@media (max-width: 450px) {
+	body {
+		max-width:425px;
+	}	
+
+}*/
 
 
