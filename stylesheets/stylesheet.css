@@ -417,15 +417,18 @@ aside {
 }
 
 @media (max-width: 767px) {
-	body {
-	max-width: 767px;
-	}
+		body {
+			max-width: 767px;
+		}
+
+
 	
 }
 
 @media (max-width: 643px) {
-	body { 
-	max-width: 643px;
+		body { 
+			max-width: 643px;
+		}
 }
 
 
