@@ -247,6 +247,11 @@ header {
 	list-style-type: upper-roman;
 }
 
+.wire li {
+	list-style-type: disc;
+	padding-top: 5px;
+}
+
 aside {
 	position: fixed;
 	top: 350px;
@@ -336,6 +341,7 @@ aside {
 		left: 0;
 		height: 50px;
 		width: 100%;
+		z-index: 9;
 	}
 
 	.main-nav ul {
@@ -407,19 +413,17 @@ aside {
 			top: -230px;
 		}
 
-		.story {
-			background: none;
-		}
+		
 
 		aside {
 			width: 100%;
 		}
 }
 
-/*@media (max-width: 767px) {
+@media (max-width: 767px) {
 		body {
-			max-width: 767px;
-			width: 767px;
+			/*max-width: 767px;
+			width: 767px;*/
 		}
 
 }
@@ -428,16 +432,20 @@ aside {
 
 @media (max-width: 643px) {
 		body { 
-			max-width: 360px;
-			width: 360px;
+			/*max-width: 360px;
+			width: 360px;*/
+		}
+		
+		.story {
+			background: none;
 		}
 }
 
 @media (max-width: 450px) {
 	body {
-		max-width:425px;
+		/*max-width:425px;*/
 	}	
 
-}*/
+}
 
 
