@@ -424,7 +424,8 @@ aside {
 }
 
 @media (max-width: 643px) {
-
+	body { 
+	max-width: 643px;
 }
 
 
