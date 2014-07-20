@@ -1,3 +1,114 @@
+/************** Note to DBC 
+
+	According to the specifications I am to center the content.
+	I believe that I have met the specification by centering the 
+	#wrapper element. I will also add a media query to center it 
+	and center all three of the content divs responsively when the
+	browser window is smaller.
+
+**************/
+
 body {
+	position: relative;
 	background-color: blue;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	/*max-width: 1800px;*/
+	margin: 0 auto;
+	background-color: gray;
+	height: 60px;
+	z-index: 10;
+}
+
+#logo {
+	width: 16%;
+}
+header ul {
+	list-style-type: none;
+	position: fixed;
+	top: 6px;
+	left: 200px;
+}
+
+header ul li {
+	display: inline-block;
+	
+}
+
+header ul li a {
+	text-decoration: none;
+	color: black;
+	margin: 0 20px 10px 20px;
+	text-shadow: .5px .5px 3.5px #d5d4d4;
+}
+
+header ul li a:hover {
+	color: #34dcd2;
+	text-shadow: .5px .5px 3.5px black;
+}
+
+a {
+	text-decoration: none;
+	color: red;
+}
+
+a:hover {
+	color: blue;
+}
+
+#wrapper {
+	max-width: 1880px;
+	margin: 0 auto;
+	background-color: yellow;
+	height: 1000px;
+}
+
+#content {
+	position: relative;
+}
+
+
+/*82 - 66 = 16
+16/4 = 4%*/
+
+.intro {
+	display: inline-block;
+	height: 300px;
+	width: 25%;
+	margin: 120px 2% 4% 17%;
+	background-color: red;
+}
+
+.tasks {
+	display: inline-block;
+	height: 300px;
+	width: 25%;
+	margin: 120px 2% 4% 0;
+	background-color: white;
+}
+
+.evernote {
+	display: inline-block;
+	height: 300px;
+	width: 25%;
+	margin: 120px 2% 4% 0;
+	background-color: navy;
+/*	float: left;*/
+}
+
+aside {
+	position: fixed;
+	width: 14%;
+	height: 500px;
+	top: 150px;
+	left: 0;
+	background-color: green;
 }
