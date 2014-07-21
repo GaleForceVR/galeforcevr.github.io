@@ -135,6 +135,31 @@ article h1 {
 /*	background-color: white;*/
 }
 
+.gmail {
+	position: relative;
+	width: 95%;
+	margin: 0 0 5% 0;
+	padding: 2.5%;
+	background-color: #808080;
+}
+
+.gmail img {
+	width: 94%;
+	margin: 3%;
+}
+
+.gmail p {
+	position: absolute;
+	/*top: 0;*/
+	padding-top: 12px;
+	padding-right: 5%;
+	left: 5%;
+	bottom: 0;
+	z-index: 5;
+	background-color: #808080;
+	text-shadow: .6px .6px 2px #d6d6d6;
+}
+
 .evernote {
 	margin: 5% 0 5% 0;
 /*	display: inline-block;
@@ -143,6 +168,20 @@ article h1 {
 	margin: 120px 2% 4% 0;
 	background-color: navy;*/
 /*	float: left;*/
+}
+
+.test-first-and-last li:first-child {
+	font-weight: bold;
+}
+
+.test-first-and-last li:last-child {
+	font-style: italic;
+}
+
+
+.epic {
+	font-style: italic;
+	font-weight: bold;
 }
 
 aside {
