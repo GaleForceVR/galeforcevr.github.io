@@ -10,10 +10,11 @@
 
 body {
 	position: relative;
-	background-color: blue;
+	background-color: #d6d6d6;
 	margin: 0;
 	padding: 0;
 	font-family: Arial, sans-serif;
+	font-size: 100%;
 }
 
 header {
@@ -23,14 +24,27 @@ header {
 	left: 0;
 	/*max-width: 1800px;*/
 	margin: 0 auto;
-	background-color: gray;
+	background-color: #808080;
 	height: 60px;
 	z-index: 10;
 }
 
-#logo {
-	width: 16%;
+h1 {
+	font-size: 2em;
 }
+
+#logo {
+	width: 250px;
+}
+
+#logo-main {
+	width: 250px;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 11;
+}
+
 header ul {
 	list-style-type: none;
 	position: fixed;
@@ -67,48 +81,86 @@ a:hover {
 #wrapper {
 	max-width: 1880px;
 	margin: 0 auto;
-	background-color: yellow;
-	height: 1000px;
+	background-color: #d6d6d6;
+	/*height: 1000px;*/
 }
 
 #content {
 	position: relative;
+	background: gray;
 }
 
+section {
+	background-color: green;
+}
 
-/*82 - 66 = 16
-16/4 = 4%*/
+article {
+	width: 84%;
+	margin: 0 3% 5% 3%;
+	float: right;
+	/*background-color: blue;*/
+}
+
+article h1 {
+	margin: 0 auto;
+	padding: 0;
+	text-shadow: 1px 1px 2px white;
+	/*background-color: yellow;*/
+}
+
+.intro, .tasks, .evernote {
+	display: inline-block;
+	/*position: relative;
+	top: -150px;*/
+	height: 300px;
+	width: 27%;
+	float: left;
+	background-color: white;
+	padding: 2%;
+}
+
+.intro h3, .tasks h3, .evernote h3 {
+	font-size: 1em;
+}
 
 .intro {
-	display: inline-block;
-	height: 300px;
-	width: 25%;
-	margin: 120px 2% 4% 17%;
-	background-color: red;
+	margin: 5% 3% 5% 0;	
 }
 
 .tasks {
-	display: inline-block;
+/*	display: inline-block;
 	height: 300px;
-	width: 25%;
-	margin: 120px 2% 4% 0;
-	background-color: white;
+	width: 25%;*/
+	margin: 5% 3% 5% 0;
+/*	background-color: white;*/
 }
 
 .evernote {
-	display: inline-block;
+	margin: 5% 0 5% 0;
+/*	display: inline-block;
 	height: 300px;
 	width: 25%;
 	margin: 120px 2% 4% 0;
-	background-color: navy;
+	background-color: navy;*/
 /*	float: left;*/
 }
 
 aside {
 	position: fixed;
-	width: 14%;
+	width: 10%;
 	height: 500px;
-	top: 150px;
+	top: 250px;
 	left: 0;
-	background-color: green;
+	background-color: #808080;
+}
+
+footer {
+	background-color: #808080;
+	height: 200px;
+	clear: both;
+}
+
+footer p {
+	padding-left: 14%;
+	padding-top: 100px;
 }
