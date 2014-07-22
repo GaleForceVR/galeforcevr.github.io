@@ -3,7 +3,8 @@ body {
 	margin: 0;
 	padding: 0;
 	position: relative;
-	font-family: Arial, san-serif;
+	font-family: 'Roboto Condensed', Arial, san-serif;
+	font-size: 100%;
 } 
 
 header {
@@ -45,28 +46,65 @@ nav ul li a:hover {
 	width: 920px;
 	height: 518px;
 	padding: 20px;
-	background-color: yellow;
+	background-color: #c7c7c7;
+}
+.feature img {
+	width: 100%;
 }
 
 .caption {
 	
 }
 
-.right-img {
-	height: 276px;
-	width: 460px;
+.names {
+	font-size: 12px;
+	display: inline-block;
+}
+
+.date {
+	font-size: 12px;
+	display: inline-block;
 	float: right;
+}
+
+.right-img {
+	width: 440px;
+	float: right;
+	margin-left: 20px;
 }
 
 .right-img img {
 	width: 420px;
 	height: 236px;
+	padding: 20px 0 0 20px;
+}
+
+.right-img p {
+	padding: 0 0 20px 20px;
+	font-size: .8em;
+}
+
+.left-img {
+	width: 440px;
+	float: left;
+	margin-right: 20px;
+}
+
+.left-img img {
+	width: 420px;
+	height: 263px;
+	padding: 20px 20px 0 0;
+}
+
+.left-img p {
+	padding: 0 20px 0 0;
+	font-size: .8em;
 }
 
 footer {
 	background-color: orange;
 	margin: 0;
-	height: 200px;
+	height: 60px;
 	padding: 50px 0 50px 50px;
 	clear: both;
 }
