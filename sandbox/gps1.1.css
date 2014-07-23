@@ -64,6 +64,7 @@ nav ul li a:hover {
 .names {
 	font-size: 12px;
 	display: inline-block;
+	float: left;
 }
 
 .date {
