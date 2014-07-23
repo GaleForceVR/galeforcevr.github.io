@@ -1,16 +1,94 @@
-Pair Programming
+<div id="wrapper">
+      <div class="feature">
+          <img src="images/dbc_logo_medium.jpg" alt="Dev Bootcamp Logo"></a>
+          <p class="caption">Dev Bootcamp</p>
+      </div>
 
-<p>When a potential boot first starts to delve into the Dev Bootcamp experience one thing becomes abundantly clear almost instantly. One of the core skills developed at DBC is Peer Pairing. Offering major advantages in quality of code, sharing of ideas and onboarding of new programmers it is easy to see why Pair Programming is become one of the hottest issues in Web Development.</p>
-<p>Clearly, Pair Programming is one of the most important skills that DBC teaches. Here is a look at four of the reasons that Pair Programming is so important:</p>
-<li><p>Pair programming is increasingly common in software development in general and pretty standard for ruby on rails jobs
-and likely to be part of the interview process.</p></li>
-<li><p>Enhances learning experience
-Knowlegde is constantly shared between pair programmers, from tips on rules to design. Gives the oppertunity for one pair to examine the others code and provide feedback which is needed to increase their own abilities to develop.</p></li>
-<li><p>Increases quality of code - less bugs
-Pairing partners are less likely to go down in the rabbit hole, and tend to come up with better designs.
-<li><p>Promotes sharing of ideas
-Everone has different minds that think in very different ways. Everyone also codes in different ways. Pair programming allows for, at a minimun, two ideas. This goes along with the idea that it enhances learning.</p></li>
-<p>Pair Programming is a way of writing code with two people working on the same document. One person types and is typically called the "Driver." The other person is called the "Navigator."</p>
-<p>Although the terms can mean different things to different programmers, typically the Navigator will instruct the Driver which line of code to work on next and watch for errors in the code.</p>
-<p>The driver usually goes where the Navigator says and is not to work on any other line of code. The Driver is not to make any changes to the code without discussing with the Navigator first. In most pairs, the Driver and Navigator will switch roles from time to time. If both programmers are equal in knowledge and skill, they will typically split the time in the two roles about 50/50.</p>
-<p>One thing is for sure. If you attend Dev Bootcamp, you are going to learn how to be a good Pair Programmer. With all of the benefits Pair Programming brings to the table, it is easy to see why it is spreading so quickly in the development community. DBC will likely continue to focus on Pair Programming as a main component of it's disruptive educational system well into the future.</p>
+      <!-- MAIN ARTICLE -->
+      
+      <h1>Thoughts on Peer Programing</h1>
+      <h3 class="names">by Troy Leach and Gale Van Rossem</h3>
+      <h3 class="date">July 22, 2014</h3>
+      
+      <p class="story"><div class="right-img">
+        <img src="images/screenshot-gps1-gale.jpg" alt"Gale Van Rossem works on HTML code during a pair programming session with Troy Leach during DBC Phase 0">
+        <p>Gale Van Rossem works on HTML code during a pair programming session with Troy Leach during DBC Phase 0</p>
+      </div>When a potential boot first starts to delve into the Dev Bootcamp experience one thing becomes abundantly clear almost instantly. One of the core skills developed at DBC is Peer Pairing. Offering major advantages in quality of code, sharing of ideas and onboarding of new programmers it is easy to see why pair programming is become one of the hottest issues in Web Development.</p>
+      <p>Clearly, pair programming is one of the most important skills that DBC teaches. Here is a look at four of the reasons that pair programming is so important:</p>
+      
+      <li><p>Pair programming is increasingly common in software development in general and pretty standard for ruby on rails jobs
+      and likely to be part of the interview process.</p></li>
+      <li><p>Enhances the learning experience - Knowledge is constantly shared between pair programmers, from tips on rules to design. Gives the oppertunity for one pair to examine the others code and provide feedback which is needed to increase their own abilities to develop.</p></li>
+
+      <li><p>Increases quality of code - less bugs. Pairing partners are less likely to go down in the rabbit hole, and tend to come up with better designs.</p></li>
+      <li><p>Promotes the sharing of ideas. Everyone has different minds that think in very different ways. Everyone also codes in different ways. Pair programming allows for, at a minimum, two ideas. This goes along with the idea that it enhances learning.</p></li>
+
+      <p>Pair Programming is a way of writing code with two people working on the same document. One person types and is typically called the "Driver." The other person is called the "Navigator."</p>
+      <div class="left-img">
+        <img src="images/troy.jpg" alt"Troy Leach works while Gale Van Rossem takes a break during a Dev Bootcamp pairing session">
+        <p>Troy Leach works while Gale Van Rossem takes a break during a Dev Bootcamp pairing session</p>
+      </div>
+      <p>Although the terms can mean different things to different programmers, typically the Navigator will instruct the Driver which line of code to work on next and watch for errors in the code.</p>
+      <p>The driver usually goes where the Navigator says and is not to work on any other line of code. The Driver is not to make any changes to the code without discussing with the Navigator first. In most pairs, the Driver and Navigator will switch roles from time to time. If both programmers are equal in knowledge and skill, they will typically split the time in the two roles about 50/50.</p>
+      <p>One thing is for sure. If you attend Dev Bootcamp, you are going to learn how to be a good pair programmer. With all of the benefits pair programming brings to the table, it is easy to see why it is spreading so quickly in the development community. DBC will likely continue to focus on pair programming as a main component of it's disruptive educational system well into the future.</p>
+
+
+
+
+
+
+
+
+************* NEW *****************
+<h3>Our Reflections</h3>
+
+<p class="question">What was it like to pair for the first time?</p>
+
+<p class="answer">Troy -</p>
+
+<p class="answer">Gale -</p><p> I was nervous before we started because I wasn't sure how easy it would be to communicate in a way that was efficient. The nerves went away quickly though, and I credit Troy for that. We had a great "Check In" at the beginning and I think that really helped us.</p> 
+
+<p>We both seemed at ease and ready to work at that point. We took a lot longer with the challenge than I expected. I don't think we could have done much to change that. It takes longer to make changes because you have to communicate a lot.</p> 
+
+<p>Troy was very good at communicating, and I think that really helped make it a productive and enjoyable session. Even though it went longer than I expected, it never felt like a drag. I think the finished product speaks for itself. I am very happy with what we accomplished and I enjoyed the experience very much.</p> 
+
+<p>I will be very lucky if every pairing session goes this smooth.</p> 
+
+<p class="question">Did you enjoy it?</p>
+
+<p class="answer">Troy -</p> 
+
+<p class="answer">Gale -</p><p> Yes, Very much!</p> 
+
+<p class="question">What worked?</p>
+
+<p class="answer">Troy -</p> 
+
+<p class="answer">Gale -</p><p> I think we had a good system where one person was driving and the other navigating and we did switch at least once. I think we were both very agreeable and decision making was surprisingly easy because of this. At the same time, neither of us were afraid to state an opinion if we saw something wrong or something that just didn't work.</p> 
+
+<p class="question">What didn't work?</p>
+
+<p class="answer">Troy -</p> 
+
+<p class="answer">Gale -</p><p> I feel like it worked very well. I'm comfortable giving feedback here, but I really feel like we did the best we could considering it was the first real pairing session for each of us. I think it took a long time, but I don't see that we could have changed that in this case. We could have rushed through things, but we would not have learned as much.</p> 
+
+<p>I do think that I should have read the assignment closer, so that we wouldn't have had to revisit a few things. I'll take the blame for that.</p> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

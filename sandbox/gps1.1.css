@@ -30,7 +30,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-	color: orange;
+	color: #fd7903;
 	text-shadow: 1px 1px 2px black;
 }
 
@@ -42,13 +42,18 @@ nav ul li a:hover {
 	padding: 60px 40px 40px 40px;
 }
 
+.headline {
+	padding-top: 40px;
+	padding-bottom: 25px;
+}
+
 .story {
 	clear: both;
 }
 
 .feature {
 	width: 920px;
-	height: 518px;
+	height: 664px;
 	padding: 20px;
 	background-color: #c7c7c7;
 }
@@ -101,8 +106,27 @@ nav ul li a:hover {
 	font-size: .8em;
 }
 
+.reflections {
+	padding: 70px 0 10px;
+	text-align: center;
+	clear: both;
+}
+
+.question {
+	font-weight: bold;
+	padding: 35px 0 15px 0;
+	margin: 0;
+}
+
+.answer {
+	display: inline-block;
+	font-weight: bold;
+	font-style: italic;
+	margin: 0 10px 0 0;
+}
+
 footer {
-	background-color: orange;
+	background-color: #fd7903;
 	margin: 0;
 	height: 60px;
 	padding: 50px 0 50px 50px;
