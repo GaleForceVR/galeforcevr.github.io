@@ -1,25 +1,25 @@
 body {
-	background-color: #d2d2d2;
+  background-color: #d2d2d2;
 }
 
 #wrapper {
-	width: 880px;
-	margin: 0 auto;
-	height: 1000px;
-	background-color: #eaeaea;
-	padding: 40px;
+  width: 880px;
+  margin: 0 auto;
+/*  height: 1000px;*/
+  background-color: #eaeaea;
+  padding: 40px;
 }
 
 .example_code {
-	border-left: 4px solid red;
-	background-color: white;
-	padding-left: 15px;
+  border-left: 4px solid red;
+  background-color: white;
+  padding-left: 15px;
 }
 
 
 
 .code {
-	background: white;
+  background: white;
 }
 
 table.code, table.spec, table.results, table.compile, table.summary
@@ -32,7 +32,7 @@ table.code, table.spec, table.results, table.compile, table.summary
 table.code
 {
     /*background-color: #e5e5e5;*/
-	background-color: white;
+  background-color: white;
 }
 
 table.spec
@@ -102,3 +102,268 @@ span.Entity
 {
     color: red
 }
+
+
+/********************QUICK HIGHLIGHTER TOOL 
+
+   * http://quickhighlighter.com/
+                              MY OUTER DIV FORMATTING
+
+*************/
+
+.code-highlight {
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid #a09f9f;
+  margin-bottom: 30px;
+  box-shadow: 5px 10px 50px #545454;
+}
+
+.code-caption {
+  height: 18px;
+  background-color: #dfdfdf;
+  color: #313131;
+  margin: 0;
+  font-family: monospace;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: -webkit-linear-gradient(#f0f0f0, #b1b0b1); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#f0f0f0, #b1b0b1); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#f0f0f0, #b1b0b1); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#f0f0f0, #b1b0b1);
+  padding-top: 2px;
+  border-bottom: 1px solid #a2a2a2;
+  text-shadow: .5px .5px 2.5px white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+
+/* bottom gradient: 545454*/
+.code-bottom-left {
+  height: 16px;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  background-color: #5b5b5b;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+  padding-top: 2px;
+  padding-left: 4px;
+  letter-spacing: .8px;
+  border-top: 1px solid #7d7d7d;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.code-bottom-right {
+  height: 16px;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  margin-top: 0;
+  color: white;
+  padding-top: 2px;
+  padding-left: 4px;
+  letter-spacing: .8px;
+  border-top: 1px solid transparent;
+  display: inline-block;
+  position: absolute;
+  bottom: -11px;
+  right: 45px;
+}
+
+/* top of caption box: f0f0f0  border-bottom: 646464*/
+
+/* top of caption box: f0f0f0  border-bottom: 646464*/
+
+
+/********************QUICK HIGHLIGHTER TOOL 
+
+   * http://quickhighlighter.com/
+
+*************/
+
+
+/**
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ */
+
+/*.html4strict .de1, .html4strict .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;;white-space: nowrapcolor: #000020;}
+.html4strict  {font-family:monospace;color: #006; border: 1px solid #d0d0d0; background-color: #f0f0f0;}
+.html4strict a:link {color: #000060;}
+.html4strict a:hover {background-color: #f0f000;}
+.html4strict .imp {font-weight: bold; color: red;}
+.html4strict li, .html4strict .li1 {font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;}
+.html4strict .li2 {font-weight: bold; vertical-align:top;font-weight: bold; color: #006060;}
+.html4strict .kw2 {color: #000000; font-weight: bold;}
+.html4strict .kw3 {color: #000066;}
+.html4strict .es0 {color: #000099; font-weight: bold;}
+.html4strict .br0 {color: #66cc66;}
+.html4strict .sy0 {color: #66cc66;}
+.html4strict .st0 {color: #ff0000;}
+.html4strict .nu0 {color: #cc66cc;}
+.html4strict .sc-1 {color: #808080; font-style: italic;}
+.html4strict .sc0 {color: #00bbdd;}
+.html4strict .sc1 {color: #ddbb00;}
+.html4strict .sc2 {color: #009900;}
+.html4strict span.xtra { display:block; }*/
+
+/**
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ */
+ 
+/*.html4strict .de1, .html4strict .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;;white-space: nowrapcolor: #000020;}*/
+
+/* background color of the whole thing  default border: 1px solid #d0d0d0 */
+/*.html4strict  {font-family:monospace;color: #006; border: none; background-color: white;}
+.html4strict a:link {color: #000060; text-decoration: none;}
+.html4strict a:hover {background-color: #f0f000;}
+.html4strict .imp {font-weight: bold; color: red;}
+*/
+/* Change font size and font-family */
+/*.html4strict li, .html4strict .li1 {font-weight: normal; vertical-align:top;font: normal normal 115% 'Courier New', Courier, monospace; color: #003030;}
+.html4strict .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.html4strict .li2 {font-weight: bold; vertical-align:top;font-weight: bold; color: #006060;}*/
+
+/* li's and a's */
+/*.html4strict .kw2 {color: #000000; font-weight: bold; text-decoration: none;}*/
+
+/* classes and href */
+/*.html4strict .kw3 {color: #000066;}
+.html4strict .es0 {color: #000099; font-weight: bold;}
+.html4strict .br0 {color: #66cc66;}*/
+
+/* = and / */
+/*.html4strict .sy0 {color: #66cc66;}*/
+
+/* "Whatever is in the quotes" */
+/*.html4strict .st0 {color: #ff0000;}
+.html4strict .nu0 {color: #cc66cc;}
+.html4strict .sc-1 {color: #808080; font-style: italic;}
+.html4strict .sc0 {color: #00bbdd;}
+.html4strict .sc1 {color: #ddbb00;}
+*/
+/* < > */
+/*.html4strict .sc2 {color: #009900;}
+.html4strict span.xtra { display:block; }*/
+
+
+
+
+
+
+/********************************************
+
+      MY VERSION OF THE MONOKAI SUBLIME TEXT 2 THEME FOR HTML
+
+********************************************/
+
+
+/**
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ */
+ 
+.html4strict .de1, .html4strict .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;;white-space: nowrapcolor: #000020;}
+/* background color of the whole thing  default border: 1px solid #d0d0d0 */
+.html4strict  {font-family:monospace;color: white; border: none; background-color: black; padding: 20px; }
+
+.html4strict a:link {color: #000060; text-decoration: none;}
+.html4strict a:hover {background-color: none;}
+
+.html4strict .imp {font-weight: bold; color: red;}
+/* Change font size and font-family */
+.html4strict li, .html4strict .li1 {font-weight: normal; vertical-align:top;font: normal normal 115% 'Courier New', Courier, monospace; color: white;}
+/*.html4strict li, .html4strict .li1 {font-weight: normal; vertical-align:top;font: normal normal 130% 'Average Sans', sans-serif; color: #003030;}*/
+.html4strict .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.html4strict .li2 {font-weight: bold; vertical-align:top;font-weight: bold; color: #8f908a;} 
+
+/* li's and a's */
+.html4strict .kw2 {color: #f92772; font-weight: bold; text-decoration: none;}
+
+/* classes and href */
+.html4strict .kw3 {color: #9be22d;}
+
+
+.html4strict .es0 {color: #000099; font-weight: bold;}
+.html4strict .br0 {color: #66cc66;}
+
+/* = and / */
+.html4strict .sy0 {color: white;}
+
+/* "Whatever is in the quotes" */
+.html4strict .st0 {color: #dedb74;}
+
+.html4strict .nu0 {color: #cc66cc;}
+.html4strict .sc-1 {color: #808080; font-style: italic;}
+.html4strict .sc0 {color: #00bbdd;}
+.html4strict .sc1 {color: #ddbb00;}
+
+/* < > */
+.html4strict .sc2 {color: white;}
+
+.html4strict span.xtra { display:block; }
+
+
+/********************************************
+
+      MY VERSION OF THE MONOKAI SUBLIME TEXT 2 THEME FOR CSS
+
+********************************************/
+
+/**
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ */
+.css .de1, .css .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;;white-space: nowrapcolor: #000020;}
+
+/* background color default border: 1px solid #d0d0d0*/
+.css  {font-family:monospace;color: #60d9ef; border: none; background-color: black; padding: 20px; }
+
+.css a:link {color: #000060;}
+.css a:hover {background-color: #f0f000;}
+.css .imp {font-weight: bold; color: red;}
+
+/* numbers */
+.css li, .css .li1 {font-weight: normal; vertical-align:top;font: normal normal 115% 'Courier New', Courier, monospace; color: #f92772;}
+
+.css .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+
+/* every 5th number and table  */
+.css .li2 {font-weight: bold; vertical-align:top; font-weight: bold; color: #f92772;}
+
+/* attributes  */
+.css .kw1 {color: #60d9ef; font-weight: normal; font-style: italic;}
+
+/* auto, white, solid etc. */
+.css .kw2 {color: #60d9ef;}
+
+.css .co1 {color: #a1a100;}
+.css .co2 {color: #ff0000; font-style: italic;}
+
+/* comments */
+.css .coMULTI {color: #8f908a; font-style: italic;}
+.css .es0 {color: #000099; font-weight: bold;}
+
+/* curly braces {} */
+.css .br0 {color: white;}
+
+/* colons and semi colons : ; */
+.css .sy0 {color: white;}
+
+.css .st0 {color: #dedb74;}
+
+/* seemingly random 0's */
+.css .nu0 {color: #977bff;}
+
+/* other numbers and id tags # */
+.css .re0 {color: #977bff;}
+
+/* classes */
+.css .re1 {color: #9be22d;}
+.css .re2 {color: #9be22d;}
+.css .re3 {color: #977bff;}
+.css span.xtra { display:block; }
