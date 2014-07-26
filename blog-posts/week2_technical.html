@@ -109,7 +109,7 @@
 							<p>Static is pretty simple. This is the default value for every element, so you do not need to specify it in CSS unless you have a special case. Why would you ever need to specify position: static;? Well, probably the most common reason would be that you have an element that is set to position: fixed; for larger screens and with the use of Media Queries you want to change the position back to static on smaller screens.</p>
 							<p>Take a look at this example:</p> -->
 
-<!-- We've created 7 nested divs here. Some with relative parents and some with static parents. The static parent divs are colored light gray and the relative parent divs are colored dark gray. -->
+							<!-- We've created 7 nested divs here. Some with relative parents and some with static parents. The static parent divs are colored light gray and the relative parent divs are colored dark gray. -->
 
 							<div class="code-highlight">
 							<!-- <p class="code-caption">gps.sandbox.html -- galeforcevr.github.io</p> -->
@@ -295,8 +295,11 @@
 							<br>
 							<h3 class="sub-headline">Important Observations</h3>
 							<p>In the example above we have seven examples. The first is the red div which is set to static and therefor it is not necessary to display more than one. It will always appear exactly where it is supposed to in the flow of the document. In this case in the upper left hand corner of it's parent div.</p>
+							<h4>Blue divs</h4>
 							<p>The next two divs are blue. The first has a parent div that is set to static and the second has it's parent div set to relative. Because the blue div is set to relative, it will always be positioned relative to where it would normally be positioned in the flow of the document. The purpose of the example is to show that the parent div's setting of relative has no effect on the blue div.</p>
+							<h4>Yellow divs</h4>
 							<p>Now we take a look at the yellow divs. Wait a minute where is the first yellow div? No, the layout isn't broken. We've set the parent div to static on the first one, so the yellow div is being positioned in reference to the first parent element that has a position of relative. In this case, the div that surrounds the code snippet is set to relative, so the yellow div is now being positioned in reference to the code snippet div. If this div were set to static instead of relative, then the yellow div would appear in the lower left hand corner of the browser window.</p>
+							<h4>Green divs</h4>
 							<p>Now for the green div. Well, there isn't much to see here, or is there? Note that both of the green divs are placed in the bottom right hand corner of the page one on top of the other. The green divs are position: fixed; and they will stay where we put them in reference to the viewport. Also note that the parent div's status of static or relative makes absolutely no difference in this example. Fixed elements are always positioned in reference to the viewport no matter how their parent elments are designated.</p>
 
 							<!-- <div>

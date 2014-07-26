@@ -6,10 +6,6 @@ body {
 	font-family: Arial, sans-serif;
 }
 
-/*.absolut-a:first-child {
-	opacity: .99;
-}*/
-
 .fixed-a {
 	position: fixed;
 	top: 0;
