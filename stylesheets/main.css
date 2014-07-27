@@ -126,32 +126,92 @@ nav ul li a:hover {
 
 */
 
-aside {
+.bio {
 	font-family: Arial, sans-serif;
 	display: inline-block;
 	position: absolute;
 	top: 0;
 	left: 0;
+	height: 250px;
 	width: 16.5%;
-	padding: 10% 3% 5% 3%;
-	background-color: gray;
+	padding: 200px 3% 0 3%;
+	background-color: #454545;
 	z-index: 3;
 }
 
-aside h1 {
+.bio h1 {
 	font-size: 1.25em;
 	padding-left: 5px;
 	margin-bottom: 10px;
 }
 
-aside ul li {
+.bio ul li {
 	margin: 5px;
 }
 
-aside ul li a {
+.bio ul li a {
 	text-decoration: none;
 	color: #34dcd2;
 	text-shadow: 1px 2px 2px black;
+}
+
+.social h1 {
+	font-size: 1.25em;
+	padding-left: 5px;
+	margin-bottom: 10px;
+}
+
+.social {
+	font-family: Arial, sans-serif;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100px;
+	width: 29%;
+	padding: 100px 3% 0 3%;
+	background-color: #454545;
+	z-index: 3;
+}
+
+.social ul li {
+	margin: 5px;
+}
+
+.social ul li a {
+	text-decoration: none;
+	color: #34dcd2;
+	text-shadow: 1px 2px 2px black;
+}
+
+.shark-fin-under {
+	position: absolute;
+	top: 449px;
+	width: 22.5%;
+	left: 0;
+}
+
+.shark-fin-under svg {
+	display: none;
+}
+
+.shark-fin-under img {
+	width: 100%;
+}
+
+.shark-fin-over {
+	position: absolute;
+	top: 198px;
+	right: 0;
+	width: 35%;
+}
+
+.shark-fin-over svg {
+	display: none;
+}
+
+.shark-fin-over img {
+	width: 100%;
 }
 
 .inner-wrapper {
