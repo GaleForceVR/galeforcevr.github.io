@@ -85,14 +85,14 @@ header nav ul li a {
   height: 90%;
   border-right: 1px solid black;
   box-shadow: 1px 0 rgba(255, 255, 255, 0.2);
-  transition: opacity 0.2 ease;
   padding: 22px 40px;
 }
 
 header nav ul li a:hover {
-  background-color: gray;
   width: 200px;
   height: 400px;
+  color: #34dcd2;
+  text-shadow: 2px 2px 3px black;
 }
 
 /*
