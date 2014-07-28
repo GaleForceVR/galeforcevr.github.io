@@ -118,34 +118,276 @@
     			<div class="main">
 
     				<section>
-    					<article>
-    						<h1>Main Story Headline</h1>
-    						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam placeat quisquam labore illum eveniet nulla adipisci nemo tenetur necessitatibus culpa eaque non rem, autem, ullam repellat voluptates corporis minima et?</p>
-    						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur adipisci esse at nam deleniti corrupti pariatur temporibus repellat harum minus animi ratione placeat, vero architecto earum magni, ut, autem a.</p>
-    						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad inventore excepturi, unde explicabo, veniam, perferendis quaerat incidunt illum sed laudantium, nesciunt et vero reiciendis molestiae. Accusantium officiis id error reprehenderit.</p>
-    						<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-    						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime tempora dignissimos eius cupiditate, inventore excepturi unde illo corrupti vel fugit molestiae possimus omnis, consequuntur doloremque, officiis, quae laboriosam similique fuga!</p>
-    						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, praesentium, magnam. Sapiente, sed esse. Deserunt maxime, qui quam repellendus natus, explicabo eligendi fuga blanditiis excepturi odit vel rerum fugit commodi.</p>
+    					<article class="blog-post">
+					<!--  ********* headline CHANGE FOR EACH NEW POST ********* -->
+					<h1 class="blog-post-title">Fixing a div absolutely inside a relatively positioned element</h1>
 
-    						Ius ut nihil timeam sanctus. Simul electram tincidunt mel ad, te pro justo sensibus. Eu prima ipsum intellegebat eam, an cum reque ullum pertinax, mei no offendit deseruisse. Per meis prima impetus ne.
+					<div class="story">
+						<!-- feature image and wrapper -->
+						<!-- ********* Feature Image CHANGE FOR EACH NEW POST ********* -->
+						<div class="feature">
+							<img src="images/css-positioning-v2.jpg" alt"It's all fun and games until someone pokes a div out.">
+							<p class="feature-caption">One of the least understood aspects of CSS for the beginning Web Designer is positioning of elements.</p>
+						</div>
+						<!-- ********* Main Article CHANGE FOR EACH NEW POST ********* -->
+						<div class="">
+							<!-- sub-headline -->
+							<!-- <h3 class="sub-headline">As internet connection speeds and display quality increase visual design is becoming more and more important</h3> -->
 
-    						Nostrum placerat salutandi id has. Ea vix impedit alienum, cu modus ludus putant mea. Noster noluisse sapientem duo id, eos assum choro honestatis ei. Pri ut sumo malorum. In accumsan periculis pro. Tollit adipisci mnesarchum ei sea, ipsum idque molestie sed ea.
+							<h3 class="sub-headline">Learn when and how to use Static, Relative, Absolute and Fixed Positioning effectively</h3>
 
-    						Ad commune sadipscing consectetuer pri, in vim sale solum consulatu, eu sale volumus duo. Dicam tempor graecis ut mei, dolore deleniti sit ad, te pro tempor salutatus. Cu quot officiis complectitur per, mei fastidii imperdiet delicatissimi eu, exerci suscipit deterruisset id est. Ut sit eros putant. Vis aeque nonumy te, veniam recteque ne vim, esse lobortis mea ea. Praesent assentior has id, ei nullam persius impedit sea.
+							<!-- main story -->
+							<p>If you are a beginner or intermediate level Web Designer and you are terrified of the position rule in CSS, rest assured that you are not alone. With only four possible values - Static, Relative, Absolute, and Fixed - at first glance it seems like it would be easy to learn. In reality, this is the one rule that frustrates both beginners and seasoned veterans on a regular basis.</p>
+							<p>Why is it so difficult to pick up? Well, I think it's just advanced enough that many beginning designers haven't made it to the point where they need to tackle it yet. On the other hand, intermediate and advanced users find it very simple to use once they know how to use it.</p>
+							<p>Once they've learned, they often forget what they've learned because they don't use it for another month or so, and then they do a quick Google search to refresh their memory.</p>
+							<p>There isn't enough demand for quality resources to teach it, and so everyone just gravitates to a few sites to learn it and there aren't many new sites that take up the issue, so we never really see much diversity in the way the information is presented.</p>
+							<p>I'm going to attempt to put it all together here in one place so that, hopefully you will have a good reference where you can quickly find the exact info you need on the subject. Here goes:</p>
+							<p>First of all, it is important to understand why and when to use each positioning value:</p><br>
+								<ul>
+									<li><strong>Static:</strong>
+										<ul class="bullets"><br>
+											<li>This is the default value for position:</li><br>
+											<li>You do not need to designate this in CSS unless you need to change an elements position value as it has been set to relative, absolute or fixed previously such as with the use of Media Queries.</li><br>
+										</ul>
+									</li><br>
+									<li><strong>Relative:</strong>
+										<ul class="bullets"><br> 
+											<li>Use if you want to position this element in relation to it's original position in the document.</li><br>
+											<li>You may use this to designate this element to use positioning on a child element. In other words, you may use position: relative; on a div and then position another element which lives inside that div in relation to the designated div. More on this in a few minutes.</li><br>
+										</ul>
+									</li><br>
+									<li><strong>Absolute:</strong>
+										<ul class="bullets"><br>
+											<li>Use this to position an element in relation to a previously designated element.</li><br>
+											<li>If no other parent element is designated with position: relative; then you can position in relation to the viewport itself.</li><br>
+										</ul>
+									</li><br>
+									<li><strong>Fixed:</strong>
+										<ul class="bullets"><br>
+											<li>This element will be positioned with respect to the viewport and will remain in that position permanently even when the rest of the page scrolls.</li><br>
+											<li>This is often used for a menu bar at the top of the screen.</li><br>
+											<li>Remember to pay attention to the z-axis attribute in CSS when using this. I usually designate a z-axis of 10 or higher for a menu bar to stay above certain items such as embedded You-Tube videos.</li><br>
+										</ul></li><br>
+								</ul><br>
+							<hr>
+							&nbsp
+							<h2 class="center-sub-headline">Examples</h2>
+							<p>Now that you have a basic understanding of when and why to use the different values for position: let's take a look at some code examples:</p><br>
+							<!-- <h3 class="sub-headline">Static</h3>
+							<p>Static is pretty simple. This is the default value for every element, so you do not need to specify it in CSS unless you have a special case. Why would you ever need to specify position: static;? Well, probably the most common reason would be that you have an element that is set to position: fixed; for larger screens and with the use of Media Queries you want to change the position back to static on smaller screens.</p>
+							<p>Take a look at this example:</p> -->
 
-    						Veritus eligendi voluptua has ex, quando oporteat periculis ut vel. Minim legere bonorum has id. Apeirian gubergren nam cu, delicata disputando philosophia in sed. Ubique eleifend dissentias an eum, dolor affert no pri. Vel eloquentiam suscipiantur at, id per affert postea, id cum dolor verterem assueverit. Eos an purto utroque, id vis sint corrumpit.
+							<!-- We've created 7 nested divs here. Some with relative parents and some with static parents. The static parent divs are colored light gray and the relative parent divs are colored dark gray. -->
 
-    						Dicat deserunt an per, appareat similique ne mea. Qui veritus commune philosophia ne, eam fierent lucilius reformidans ad. Graece scripta legendos at cum. Error soleat docendi sed at, esse duis congue at nam, lorem adolescens nec te. Ex malis vitae cum, erat graeci albucius et mel.
+							<div class="code-highlight">
+							<!-- <p class="code-caption">gps.sandbox.html -- galeforcevr.github.io</p> -->
+							<p class="code-caption">your-page.html -- your-site.com</p>
 
-    						Ut posse phaedrum mei, sea ne justo graecis admodum, duo aliquid epicurei ad. In bonorum dolores sea, ei qui postea albucius. Ex quo esse commodo, no vim hinc laudem. Quando option malorum an usu, veri primis liberavisse vix ne. Mei ex malis ludus integre, in usu eirmod aliquid.
+							<div class="html4strict"><span class="sc-1">&lt;!-- We've created 7 nested divs here. Some with relative parents and some with static parents. The static parent divs are colored light gray and the relative parent divs are colored dark gray. This will make more sense when you see the examples below. --&gt;</span></div>
 
-    						Nam mollis utroque ne. Et cum dicta tritani propriae, nam modo nobis insolens ei, vis at nonumy deserunt. Mei cu alia intellegat. An sit laoreet oporteat ocurreret, ut tantas dignissim sea, mea sonet fabellas patrioque no.
+							<div class="html4strict">
 
-    						Oratio possim mei ei, usu an hendrerit reprehendunt. Mea ei posidonium omittantur, sea modo ubique admodum eu. Quis docendi explicari id mei. Per veniam nemore mandamus ei, eu modus vivendum eos, diam tota eripuit est no.
 
-    						Quo ex hinc aperiri deseruisse, pri vocent epicurei in. Ei mel dolorum pertinacia, an sit blandit officiis dissentiunt. Duis epicurei democritum in sit, brute autem eu duo. Eleifend electram vituperatoribus sit ne, cu qui minim prodesset.
+							
 
-    					</article>
+
+
+								<span class="sc2">&lt;<a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">&quot;parent-static&quot;</span>&gt;</span><br />
+							<br />
+							&nbsp; &nbsp; <span class="sc2">&lt;<a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">&quot;red&quot;</span>&gt;&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a>&gt;</span><br />
+							<br />
+							<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a>&gt;</span><br />
+							<br />
+							<span class="sc2">&lt;<a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">&quot;parent-static&quot;</span>&gt;</span><br />
+							<br />
+							&nbsp; &nbsp; <span class="sc2">&lt;<a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">&quot;blue&quot;</span>&gt;&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a>&gt;</span><br />
+							<br />
+							<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a>&gt;</span><br />
+							<br />
+							<span class="sc2">&lt;<a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">&quot;parent-relative&quot;</span>&gt;</span><br />
+							<br />
+							&nbsp; &nbsp; <span class="sc2">&lt;<a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">&quot;blue&quot;</span>&gt;&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a>&gt;</span><br />
+							<br />
+							<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a>&gt;</span><br />
+							<br />
+							<span class="sc2">&lt;<a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">&quot;parent-static&quot;</span>&gt;</span><br />
+							<br />
+							&nbsp; &nbsp; <span class="sc2">&lt;<a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">&quot;yellow&quot;</span>&gt;&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a>&gt;</span><br />
+							<br />
+							<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a>&gt;</span><br />
+							<br />
+							<span class="sc2">&lt;<a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">&quot;parent-relative&quot;</span>&gt;</span><br />
+							<br />
+							&nbsp; &nbsp; <span class="sc2">&lt;<a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">&quot;yellow&quot;</span>&gt;&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a>&gt;</span><br />
+							<br />
+							<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a>&gt;</span><br />
+							<br />
+							<span class="sc2">&lt;<a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">&quot;parent-static&quot;</span>&gt;</span><br />
+							<br />
+							&nbsp; &nbsp; <span class="sc2">&lt;<a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">&quot;green&quot;</span>&gt;&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a>&gt;</span><br />
+							<br />
+							<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a>&gt;</span><br />
+							<br />
+							<span class="sc2">&lt;<a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">&quot;parent-relative&quot;</span>&gt;</span><br />
+							<br />
+							&nbsp; &nbsp; <span class="sc2">&lt;<a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">&quot;green&quot;</span>&gt;&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a>&gt;</span><br />
+							&nbsp; &nbsp; <br />
+							<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a>&gt;</span></div>
+
+							 
+
+							<!-- CSS EXAMPLE START HERE -->
+
+							<div class="css">
+
+
+
+
+							<!-- EMBEDDED EXAMPLE START HERE -->
+
+
+							<div class="positioning-special">
+
+								<div class="parent-static">
+
+									<div class="red"></div>
+
+								</div>
+
+								<div class="parent-static">
+
+									<div class="blue"></div>
+
+								</div>
+
+								<div class="parent-relative">
+
+									<div class="blue"></div>
+
+								</div>
+
+								<div class="parent-static">
+
+									<div class="yellow"></div>
+
+								</div>
+
+								<div class="parent-relative">
+
+									<div class="yellow"></div>
+
+								</div>
+
+								<div class="parent-static">
+
+									<div class="green"></div>
+
+								</div>
+
+								<div class="parent-relative">
+
+									<div class="green"></div>
+									
+								</div>
+
+							</div>
+
+
+							<!-- EMBEDDED EXAMPLE END HERE -->
+
+
+
+							.parent-<span class="kw2">static</span> <span class="br0">&#123;</span><br />
+							&nbsp; &nbsp; <span class="kw1">margin</span><span class="sy0">:</span> <span class="re3">10px</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">width</span><span class="sy0">:</span> <span class="re3">150px</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">height</span><span class="sy0">:</span> <span class="re3">100px</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">background-color</span><span class="sy0">:</span> LightGray<span class="sy0">;</span><br />
+							<span class="br0">&#125;</span><br />
+							<br />
+							.parent-<span class="kw2">relative</span> <span class="br0">&#123;</span><br />
+							&nbsp; &nbsp; <span class="kw1">margin</span><span class="sy0">:</span> <span class="re3">10px</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">position</span><span class="sy0">:</span> <span class="kw2">relative</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">width</span><span class="sy0">:</span> <span class="re3">150px</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">height</span><span class="sy0">:</span> <span class="re3">100px</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">background-color</span><span class="sy0">:</span> DimGray<span class="sy0">;</span><br />
+							<span class="br0">&#125;</span><br />
+							<br />
+							.<span class="kw2">red</span> <span class="br0">&#123;</span><br />
+							&nbsp; &nbsp; <span class="kw1">position</span><span class="sy0">:</span> <span class="kw2">static</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">width</span><span class="sy0">:</span> <span class="re3">50px</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">height</span><span class="sy0">:</span> <span class="re3">50px</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">background-color</span><span class="sy0">:</span> <span class="kw2">red</span><span class="sy0">;</span><br />
+							<span class="br0">&#125;</span><br />
+							<br />
+							.<span class="kw1">blue</span> <span class="br0">&#123;</span><br />
+							&nbsp; &nbsp; <span class="kw1">position</span><span class="sy0">:</span> <span class="kw2">relative</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">top</span><span class="sy0">:</span> <span class="re3">10px</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">left</span><span class="sy0">:</span> <span class="re3">30px</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">width</span><span class="sy0">:</span> <span class="re3">50px</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">height</span><span class="sy0">:</span> <span class="re3">50px</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">background-color</span><span class="sy0">:</span> <span class="kw1">blue</span><span class="sy0">;</span><br />
+							<span class="br0">&#125;</span><br />
+							<br />
+							.<span class="kw2">yellow</span> <span class="br0">&#123;</span><br />
+							&nbsp; &nbsp; <span class="kw1">position</span><span class="sy0">:</span> <span class="kw2">absolute</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">bottom</span><span class="sy0">:</span> <span class="re3">30px</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">left</span><span class="sy0">:</span> <span class="re3">30px</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">width</span><span class="sy0">:</span> <span class="re3">50px</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">height</span><span class="sy0">:</span> <span class="re3">50px</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">background-color</span><span class="sy0">:</span> <span class="kw2">yellow</span><span class="sy0">;</span><br />
+							<span class="br0">&#125;</span><br />
+							<br />
+							.<span class="kw2">green</span> <span class="br0">&#123;</span><br />
+							&nbsp; &nbsp; <span class="kw1">position</span><span class="sy0">:</span> <span class="kw2">fixed</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">width</span><span class="sy0">:</span> <span class="re3">50px</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">height</span><span class="sy0">:</span> <span class="re3">50px</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">background-color</span><span class="sy0">:</span> <span class="kw2">green</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">bottom</span><span class="sy0">:</span> <span class="nu0">0</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">right</span><span class="sy0">:</span> <span class="nu0">0</span><span class="sy0">;</span><br />
+							&nbsp; &nbsp; <span class="kw1">z-index</span><span class="sy0">:</span> <span class="nu0">12</span><span class="sy0">;</span><br />
+							<span class="br0">&#125;</span>
+							<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;
+						</div>
+							
+
+
+							<!-- CSS EXAMPLE END HERE -->
+
+							  <p class="code-bottom-left">Line yy, Column xx</p>
+							  <p class="code-bottom-right">Spaces: 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML/CSS</p>
+
+							</div>
+
+							<!-- STATIC CODE EXAMPLE HERE -->
+
+							<br>
+							<h3 class="sub-headline">Important Observations</h3>
+							<p>In the example above we have seven examples. The first is the red div which is set to static and therefor it is not necessary to display more than one. It will always appear exactly where it is supposed to in the flow of the document. In this case in the upper left hand corner of it's parent div.</p>
+							<h4>Blue divs</h4>
+							<p>The next two divs are blue. The first has a parent div that is set to static and the second has it's parent div set to relative. Because the blue div is set to relative, it will always be positioned relative to where it would normally be positioned in the flow of the document. The purpose of the example is to show that the parent div's setting of relative has no effect on the blue div.</p>
+							<h4>Yellow divs</h4>
+							<p>Now we take a look at the yellow divs. Wait a minute where is the first yellow div? No, the layout isn't broken. We've set the parent div to static on the first one, so the yellow div is being positioned in reference to the first parent element that has a position of relative. In this case, the div that surrounds the code snippet is set to relative, so the yellow div is now being positioned in reference to the code snippet div. If this div were set to static instead of relative, then the yellow div would appear in the lower left hand corner of the browser window.</p>
+							<h4>Green divs</h4>
+							<p>Now for the green div. Well, there isn't much to see here, or is there? Note that both of the green divs are placed in the bottom right hand corner of the page one on top of the other. The green divs are position: fixed; and they will stay where we put them in reference to the viewport. Also note that the parent div's status of static or relative makes absolutely no difference in this example. Fixed elements are always positioned in reference to the viewport no matter how their parent elments are designated.</p>
+
+							<!-- <div>
+							&nbsp
+							<h3><a href="http://mashable.com/" target="_blank">LINK HEADLINE</a></h3>
+							<p class="left"><div class="article-img"><img src="../images/mashable-thmb.jpg" alt"Mashable.com"><p class="article-img-caption">INLINE THUMBNAIL CAPTION</p></div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, maxime commodi tempora sunt ullam ea doloremque delectus quos labore laborum voluptate non est unde magni corporis nihil officia dolores expedita.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eaque nobis ab ipsa magni autem officia impedit quos minus, repellendus facere aperiam aut maiores alias dicta assumenda. Provident, dolore, voluptatem.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus incidunt, nam assumenda sequi tenetur aperiam tempora laboriosam. Vel minima eius, minus debitis pariatur, voluptatem, autem molestias molestiae rem assumenda porro?</p>
+							</div> -->
+							&nbsp;
+							<hr>
+							&nbsp;
+							<p><em>Let's do something <strong>EPIC!</strong></em></p>
+						</div>
+						<!-- End of Main Article -->
+						
+					</div>
+
+
+				</article>
     					
     				</section>
 

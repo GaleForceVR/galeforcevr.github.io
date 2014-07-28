@@ -311,3 +311,413 @@ nav ul li a:hover {
 	z-index: 6;
 	font-size: .95em;
 }
+
+.blog-post-title {
+	padding-bottom: 60px;
+	font-size: 40px;
+}
+
+.feature {
+	position: relative;
+	left: -12.5%;
+	width: 125%;
+	background: black;
+	margin: 0 0 30px 0;
+	padding: 0;
+}
+
+.feature img {
+	/*background: blue;*/
+	width: 90%;
+	height: auto;
+	margin: 5% 5% 5% 5%;
+	border: 0;
+	padding: 0;
+}
+
+.feature-caption {
+	position: relative;
+	top: -10px;
+	color: #34dcd2;
+	margin: 0;
+	padding: 0 30px 10px 5%;
+}
+
+/********************QUICK HIGHLIGHTER TOOL 
+
+   * http://quickhighlighter.com/
+                              MY OUTER DIV FORMATTING
+
+*************/
+
+.code-highlight {
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid #a09f9f;
+  margin-bottom: 30px;
+  box-shadow: 5px 10px 50px #545454;
+}
+
+.code-caption {
+  height: 18px;
+  background-color: #dfdfdf;
+  color: #313131;
+  margin: 0;
+  font-family: monospace;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: -webkit-linear-gradient(#f0f0f0, #b1b0b1); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#f0f0f0, #b1b0b1); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#f0f0f0, #b1b0b1); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#f0f0f0, #b1b0b1);
+  padding-top: 2px;
+  border-bottom: 1px solid #a2a2a2;
+  text-shadow: .5px .5px 2.5px white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+
+/* bottom gradient: 545454*/
+.code-bottom-left {
+  height: 16px;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  background-color: #5b5b5b;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+  padding-top: 2px;
+  padding-left: 4px;
+  letter-spacing: .8px;
+  border-top: 1px solid #7d7d7d;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.code-bottom-right {
+  height: 16px;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  margin-top: 0;
+  color: white;
+  padding-top: 2px;
+  padding-left: 4px;
+  letter-spacing: .8px;
+  border-top: 1px solid transparent;
+  display: inline-block;
+  position: absolute;
+  bottom: -11px;
+  right: 45px;
+}
+
+/********************************************
+
+      MY VERSION OF THE MONOKAI SUBLIME TEXT 2 THEME FOR HTML
+
+********************************************/
+
+
+/**
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ */
+ 
+.html4strict .de1, .html4strict .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;;white-space: nowrapcolor: #000020;}
+/* background color of the whole thing  default border: 1px solid #d0d0d0 */
+.html4strict  {font-family:monospace;color: white; border: none; background-color: black; padding: 20px; }
+
+.html4strict a:link {color: #000060; text-decoration: none;}
+.html4strict a:hover {background-color: none;}
+
+.html4strict .imp {font-weight: bold; color: red;}
+/* Change font size and font-family */
+.html4strict li, .html4strict .li1 {font-weight: normal; vertical-align:top;font: normal normal 115% 'Courier New', Courier, monospace; color: white;}
+/*.html4strict li, .html4strict .li1 {font-weight: normal; vertical-align:top;font: normal normal 130% 'Average Sans', sans-serif; color: #003030;}*/
+.html4strict .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.html4strict .li2 {font-weight: bold; vertical-align:top;font-weight: bold; color: #8f908a;} 
+
+/* li's and a's */
+.html4strict .kw2 {color: #f92772; font-weight: bold; text-decoration: none;}
+
+/* classes and href */
+.html4strict .kw3 {color: #9be22d;}
+
+
+.html4strict .es0 {color: #000099; font-weight: bold;}
+.html4strict .br0 {color: #66cc66;}
+
+/* = and / */
+.html4strict .sy0 {color: white;}
+
+/* "Whatever is in the quotes" */
+.html4strict .st0 {color: #dedb74;}
+
+.html4strict .nu0 {color: #cc66cc;}
+.html4strict .sc-1 {color: #808080; font-style: italic;}
+.html4strict .sc0 {color: #00bbdd;}
+.html4strict .sc1 {color: #ddbb00;}
+
+/* < > */
+.html4strict .sc2 {color: white;}
+
+.html4strict span.xtra { display:block; }
+
+
+/********************************************
+
+      MY VERSION OF THE MONOKAI SUBLIME TEXT 2 THEME FOR CSS
+
+********************************************/
+
+/**
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ */
+.css .de1, .css .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;;white-space: nowrapcolor: #000020;}
+
+/* background color default border: 1px solid #d0d0d0*/
+.css  {font-family:monospace;color: #60d9ef; border: none; background-color: black; padding: 20px; }
+
+.css a:link {color: #000060;}
+.css a:hover {background-color: #f0f000;}
+.css .imp {font-weight: bold; color: red;}
+
+/* numbers */
+.css li, .css .li1 {font-weight: normal; vertical-align:top;font: normal normal 115% 'Courier New', Courier, monospace; color: #f92772;}
+
+.css .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+
+/* every 5th number and table  */
+.css .li2 {font-weight: bold; vertical-align:top; font-weight: bold; color: #f92772;}
+
+/* attributes  */
+.css .kw1 {color: #60d9ef; font-weight: normal; font-style: italic;}
+
+/* auto, white, solid etc. */
+.css .kw2 {color: #60d9ef;}
+
+.css .co1 {color: #a1a100;}
+.css .co2 {color: #ff0000; font-style: italic;}
+
+/* comments */
+.css .coMULTI {color: #8f908a; font-style: italic;}
+.css .es0 {color: #000099; font-weight: bold;}
+
+/* curly braces {} */
+.css .br0 {color: white;}
+
+/* colons and semi colons : ; */
+.css .sy0 {color: white;}
+
+.css .st0 {color: #dedb74;}
+
+/* seemingly random 0's */
+.css .nu0 {color: #977bff;}
+
+/* other numbers and id tags # */
+.css .re0 {color: #977bff;}
+
+/* classes */
+.css .re1 {color: #9be22d;}
+.css .re2 {color: #9be22d;}
+.css .re3 {color: #977bff;}
+.css span.xtra { display:block; }
+
+
+/*********************************************************
+
+
+*********************************************************/
+
+
+.sub-headline {
+	margin: 2.5% 5% 5% 0;
+	padding: 0;
+}
+
+.sub-headline {
+	margin: 0;
+	padding: 0;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.article-img {
+		display: inline-block;
+	width: 50%;
+	background: black;
+	margin: 0 5% 5% 0;
+	padding: 0;
+	float: left;
+}
+
+.article-img img {
+	float: left;
+	width: 90%;
+	height: auto;
+	margin: 5% 5% 5% 5%;
+	border: 0;
+	padding: 0;
+}
+
+.article-img-right {
+		display: inline-block;
+	width: 50%;
+	background: black;
+	margin: 5% 0 5% 5%;
+	padding: 0;
+	float: right;
+}
+
+.article-img-right img {
+	float: right;
+	width: 90%;
+	height: auto;
+	margin: 5% 5% 5% 5%;
+	border: 0;
+	padding: 0;
+}
+
+.left {
+	float: left;
+}
+/*}
+.img-right p {
+	float: right;
+}*/
+
+.article-img-caption {
+	position: relative;
+	/*top: -10px;*/
+	color: #34dcd2;
+	margin: 0;
+	padding: 0 30px 10px 5%;
+	font-size: 0.8em;
+}
+
+.full-size {
+	width: 95%;
+	margin: 0 2.5% 40px 2.5%;
+}
+
+.one-time li {
+	list-style-type: upper-roman;
+}
+
+.wire li {
+	list-style-type: disc;
+	padding-top: 5px;
+}
+
+.bullets li {
+	list-style-type: disc;
+}
+
+.positioning-special {
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+.parent-static {
+	margin: 10px;
+	width: 150px;
+	height: 80px;
+	background-color: LightGray;
+}
+
+.parent-relative {
+	margin: 10px;
+	position: relative;
+	width: 150px;
+	height: 80px;
+	background-color: DimGray;
+}
+
+.red {
+	position: static;
+	width: 50px;
+	height: 50px;
+	background-color: red;
+}
+
+.blue {
+	position: relative;
+	top: 10px;
+	left: 30px;
+	width: 50px;
+	height: 50px;
+	background-color: blue;
+}
+
+.yellow {
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	width: 50px;
+	height: 50px;
+	background-color: yellow;
+}
+
+.green {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background-color: green;
+	bottom: 0;
+	right: 0;
+	z-index: 12;
+}
+
+.orange {
+	position: relative;
+	top: 10px;
+	left: 30px;
+	width: 50px;
+	height: 50px;
+	background-color: orange;
+}
+
+
+
+/*************************** MEDIA QUERIES
+
+
+********************/
+
+@media (max-width: 1500px) {
+	
+}
+
+@media (max-width: 1300px) {
+	
+}
+
+@media (max-width: 1200px) {
+	
+}
+
+@media (max-width: 999px) {
+		
+}
+
+@media (max-width: 767px) {
+
+
+}
+	
+
+@media (max-width: 643px) {
+
+}
+
+@media (max-width: 500px) {
+
+}
