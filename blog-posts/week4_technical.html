@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- ******* Page Title Goes Here CHANGE THIS FOR EACH NEW PAGE ********  -->
+	<title>Enumerable#group_by | My new favorite Enumerable method</title>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+<body>
+<!-- 	<div class="gale"></div> -->
+	<!-- header -->
+	<header>
+		<div class="logo"><a href="../index.html"><img src="../images/galeforcevr-logo.png" alt="GaleForceVR Logo"></a></div>
+		<!-- main navigation -->
+		<nav class="main-nav"> 
+			<ul>
+				<li><a href="../index.html">HOME</a></li>
+				<li><a href="../blog.html">BLOG</a></li>
+				<li><a href="mailto:galeforcevr@gmail.com?subject=GaleForceVR Blog Site">CONTACT</a></li>
+			</ul>
+		</nav>
+		<!-- social nav -->
+		<div class="social">
+			<ul>
+				<li><a href="https://github.com/GaleForceVR" target="_blank"><img src="../images/social-github.png" alt="github"></a></li>
+				<li><a href="https://twitter.com/GaleForceVR" target="_blank"><img src="../images/social-twitter.png" alt="twitter"></a></li>
+				<li><a href="https://plus.google.com/u/0/+GaleVanRossemDBC/" target="_blank"><img src="../images/social-googleplus.png" alt="google+"></a></li>
+				<li><a href="https://www.facebook.com/Gale.Force.VR" target="_blank"><img src="../images/social-facebook.png" alt="facebook"></a></li>
+				<li><a href="http://www.linkedin.com/in/galeforcevr/" target="_blank"><img src="../images/social-linkedin.png" alt="linked-in"></a></li>
+			</ul>
+		</div>
+		
+	</header>
+	<div class="gale"></div>
+
+	<!-- main content -->
+
+	<div class="wrapper">
+		
+		<div id="main">
+			<!-- main article/content -->
+			<section id="content">
+				<!-- blog post -->
+				<article class="blog-post">
+					<!--  ********* headline CHANGE FOR EACH NEW POST ********* -->
+					<h1 class="blog-post-title">Enumerable#group_by | My new favorite Enumerable method</h1>
+
+					<div class="story">
+						<!-- feature image and wrapper -->
+						<!-- ********* Feature Image CHANGE FOR EACH NEW POST ********* -->
+						<div class="feature">
+							<img src="../images/group-by.jpg" alt"Enumerable#group_by takes an Array and groups it by an argument">
+							<p class="feature-caption">Enumerable#group_by takes an Array and groups it by an argument</p>
+						</div>
+						<!-- ********* Main Article CHANGE FOR EACH NEW POST ********* -->
+						<div class="inner-wrapper">
+							<!-- sub-headline -->
+							<!-- <h3 class="sub-headline">As internet connection speeds and display quality increase visual design is becoming more and more important</h3> -->
+
+							<h3 class="sub-headline">If you've never used Enumerable#group_by you might not be aware of this useful grouping tool</h3>
+
+							<!-- main story -->
+							<p>Chances are you've skimmed past this in the Ruby.org docs and didn't give it a second thought. It comes right after the ever popular Enumerable#grep method and it only takes up a few lines. The docs, however well written, just don't do this little method justice.</p>
+							<p>Let's take a look at what makes it so special and then we'll walk through a real world example to see how we might put this to use.</p>
+							<p>#group_by is a method that can iterate over an Array or a Hash and, as the name implies, group the elements into a new Hash with keys representative of the evaluated result from the code block used to generate it. Seems simple enough right? So let's see how it works:</p>
+							<p>In the example below, we have an Array of names called 'array' which we call #group_by on using the length of each name as the evaluator. We end up with a hash stored in 'result' which we then use #sort_by on to get a ranking of names by largest first:</p>
+
+							<div class="code-highlight">
+							<!-- <p class="code-caption">gps.sandbox.html -- galeforcevr.github.io</p> -->
+							<p class="code-caption">group_by.rb -- your-project.com</p>
+
+							<div class="ruby"><span class="kw3">array</span><span class="equality"> = </span><span class="br0">&#91;</span><span class="st0">&quot;Abbie&quot;</span>, <span class="st0">&quot;Ajay&quot;</span>, <span class="st0">&quot;Alex&quot;</span>, <span class="st0">&quot;Alexander&quot;</span>, <span class="st0">&quot;Christian&quot;</span>, <span class="st0">&quot;Christopher&quot;</span>, <span class="st0">&quot;Danielle&quot;</span><span class="br0">&#93;</span><br />
+							<br />
+							<span class="kw3">result</span><span class="equality"> = </span><span class="kw3">array</span>.<span class="me1">group_by</span> <span class="br0">&#123;</span> <span class="sy0">|</span>name<span class="sy0">|</span> name.<span class="me1">length</span> <span class="br0">&#125;</span><br />
+							<br />
+							<span class="kw3">puts</span> <span class="br0">&#40;</span>result.<span class="me1">sort_by</span> <span class="br0">&#123;</span> <span class="sy0">|</span>k,v<span class="sy0">|</span> k <span class="br0">&#125;</span><span class="br0">&#41;</span>.<span class="me1">reverse</span>.<span class="me1">inspect</span><br />
+							<br />
+							<br />
+							<br />
+							<span class="co1"># Output:</span><br />
+							<span class="co1"># [[11, [&quot;Christopher&quot;]], [9, [&quot;Alexander&quot;, &quot;Christian&quot;]], [8, [&quot;Danielle&quot;]], [5, [&quot;Abbie&quot;]], [4, [&quot;Ajay&quot;, &quot;Alex&quot;]]]</span></div>
+
+							  <p class="code-bottom-left">Line yy, Column xx</p>
+							  <p class="code-bottom-right">Spaces: 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RUBY</p>
+
+							</div>
+
+							<p>In the next line, we use #sort_by on the result hash then #reverse and #inspect. The #sort_by method turns our output back into an Array, but the key, value pairs still exist. We could easily turn this back into a hash if necessary.</p>
+							<p>Note that the keys in the key value pair are the #length of each word as we called in the #group_by method.</p>
+							<p>If you haven't done so yet, pull up an IRB session or just create a new .rb file and play around with Enumereable#group_by for awhile. There's bound to be a moment when you find a perfect use for this, and you'll be glad you took the time to get to know it.</p>
+
+							&nbsp;
+							<hr>
+							&nbsp;
+							<p><em>Let's do something <strong>EPIC!</strong></em></p>
+
+
+							<!-- <hr>
+							&nbsp
+							<h3 class="sub-headline">SUB HEADLINE 2</h3>
+
+							<div>
+							&nbsp
+							<h3><a href="http://mashable.com/" target="_blank">LINK HEADLINE</a></h3>
+							<p class="left"><div class="article-img"><img src="../images/mashable-thmb.jpg" alt"Mashable.com"><p class="article-img-caption">INLINE THUMBNAIL CAPTION</p></div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, maxime commodi tempora sunt ullam ea doloremque delectus quos labore laborum voluptate non est unde magni corporis nihil officia dolores expedita.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eaque nobis ab ipsa magni autem officia impedit quos minus, repellendus facere aperiam aut maiores alias dicta assumenda. Provident, dolore, voluptatem.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus incidunt, nam assumenda sequi tenetur aperiam tempora laboriosam. Vel minima eius, minus debitis pariatur, voluptatem, autem molestias molestiae rem assumenda porro?</p>
+							</div>
+							<img class="full-size" src="../images/mashable-menu.jpg" alt="Mashable.com">
+							&nbsp&nbsp
+							<hr>
+							<div>
+							&nbsp
+							<h3><a href="http://mashable.com/" target="_blank">LINK HEADLINE</a></h3>
+							<p class="left"><div class="article-img"><img src="../images/mashable-thmb.jpg" alt"Mashable.com"><p class="article-img-caption">INLINE THUMBNAIL CAPTION</p></div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, maxime commodi tempora sunt ullam ea doloremque delectus quos labore laborum voluptate non est unde magni corporis nihil officia dolores expedita.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eaque nobis ab ipsa magni autem officia impedit quos minus, repellendus facere aperiam aut maiores alias dicta assumenda. Provident, dolore, voluptatem.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus incidunt, nam assumenda sequi tenetur aperiam tempora laboriosam. Vel minima eius, minus debitis pariatur, voluptatem, autem molestias molestiae rem assumenda porro?</p>
+							</div>
+							<img class="full-size" src="../images/mashable-menu.jpg" alt="Mashable.com">
+							&nbsp&nbsp
+							<hr>
+							&nbsp -->
+						</div>
+						<!-- End of Main Article -->
+						
+					</div>
+
+
+				</article>
+				
+			</section>
+
+			<!-- nav drop down menu -->
+			<aside id="drop-down">
+				
+			</aside>
+		</div>
+		
+	</div>
+	<footer>
+		<!-- footer -->
+	</footer>
+</body>
+
+
+
+
+
+
+
+
+</html>
