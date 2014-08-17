@@ -242,6 +242,10 @@ header {
 	padding: 5%;
 }
 
+.invisible {
+	display: none;
+}
+
 .feature-caption {
 	position: relative;
 	top: -10px;
