@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- ******* Page Title Goes Here CHANGE THIS FOR EACH NEW PAGE ********  -->
+	<title>Boot Class | Dev Bootcamp</title>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	
+</head>
+<body>
+<!-- 	<div class="gale"></div> -->
+	<!-- header -->
+	<header>
+		<div class="logo"><a href="../index.html"><img src="../images/galeforcevr-logo.png" alt="GaleForceVR Logo"></a></div>
+		<!-- main navigation -->
+		<nav class="main-nav"> 
+			<ul>
+				<li><a href="../index.html">HOME</a></li>
+				<li><a href="../blog.html">BLOG</a></li>
+				<li><a href="mailto:galeforcevr@gmail.com?subject=GaleForceVR Blog Site">CONTACT</a></li>
+			</ul>
+		</nav>
+		<!-- social nav -->
+		<div class="social">
+			<ul>
+				<li><a href="https://github.com/GaleForceVR" target="_blank"><img src="../images/social-github.png" alt="github"></a></li>
+				<li><a href="https://twitter.com/GaleForceVR" target="_blank"><img src="../images/social-twitter.png" alt="twitter"></a></li>
+				<li><a href="https://plus.google.com/u/0/+GaleVanRossemDBC/" target="_blank"><img src="../images/social-googleplus.png" alt="google+"></a></li>
+				<li><a href="https://www.facebook.com/Gale.Force.VR" target="_blank"><img src="../images/social-facebook.png" alt="facebook"></a></li>
+				<li><a href="http://www.linkedin.com/in/galeforcevr/" target="_blank"><img src="../images/social-linkedin.png" alt="linked-in"></a></li>
+			</ul>
+		</div>
+		
+	</header>
+	<div class="gale"></div>
+
+	<!-- main content -->
+
+	<div class="wrapper">
+		
+		<div id="main">
+			<!-- main article/content -->
+			<section id="content">
+				<!-- blog post -->
+				<article class="blog-post">
+					<!--  ********* headline CHANGE FOR EACH NEW POST ********* -->
+					<h1 class="blog-post-title">A Class for Dev Bootcamp Boots</h1>
+
+					<div class="story">
+						<!-- feature image and wrapper -->
+						<!-- ********* Feature Image CHANGE FOR EACH NEW POST ********* -->
+						<div class="feature">
+							<blockquote class="twitter-tweet" lang="en"><p>Yah. I did it. Oh and it&#39;s my birthday!!!! <a href="https://twitter.com/devbootcamp">@devbootcamp</a> <a href="http://t.co/IZNV74E5Nm">pic.twitter.com/IZNV74E5Nm</a></p>&mdash; Lorena Mesa (@loooorenanicole) <a href="https://twitter.com/loooorenanicole/statuses/442057311448600576">March 7, 2014</a></blockquote>
+							<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+							<!-- <img src="../images/mashable.jpg" alt"Mashable has a great 3 column layout"> -->
+							<p class="feature-caption">FEATURE IMAGE CAPTION</p>
+						</div>
+						<!-- ********* Main Article CHANGE FOR EACH NEW POST ********* -->
+						<div class="inner-wrapper">
+							<!-- sub-headline -->
+							<!-- <h3 class="sub-headline">As internet connection speeds and display quality increase visual design is becoming more and more important</h3> -->
+
+							<h3 class="sub-headline">Class is an important concept in Ruby. As Boots are important at DBC, it's only fitting that they should have their own Ruby Class.</h3>
+
+							<!-- main story -->
+							<p>Class is one of the most important concepts in the Ruby languange. Classes allow us to define objects. We instantiate an object in Ruby by calling [Class Name].new and when we do so, we have created a new object with the Class of whatever we named it. We can even alter existing Classes in Ruby by opening and defining them again.</p>
+							<p>We can create a Class to model real world objects. If you are writing a program for something, you will most likely pick at least one real world element to model with a Class, and in most instances, you will model more than one with a Class.</p>
+							<p>To demonstrate this, I thought it would be fun and helpful to model a real world object that is very near and dear to my heart. The Boot is also a very important part of the Dev Bootcamp system. One could certainly argue that it is the most important part.</p>
+							<p>So, how do we know when to use a Class to model an object? Well, anytime that we have an object that needs to be manipulated and have it's own characteristics or methods, then we need to create a Class for it.</p>
+							<p>Take a look at the Boot Class below and I think it will start to make more sense. Keep in mind that I have added quite a bit of non-essential code to this. It's kind of a Rube Goldberg edition. I think if you copy and paste this into a new .rb document and play with it for awhile, it might help you to understand classes and how they work.</p>
+							<p>
+
+							<div class="code-highlight">
+							<!-- <p class="code-caption">gps.sandbox.html -- galeforcevr.github.io</p> -->
+							<p class="code-caption">boot_class.rb -- DevBootcamp.com</p>
+
+							<div class="ruby"><span class="kw3">require</span> <span class="st0">'date'</span><br />
+							<br />
+							<span class="kw1">class</span> Boot<br />
+							<br />
+							&nbsp; &nbsp; <span class="kw1">def</span> initialize<span class="br0">&#40;</span>name, start_date<span class="br0">&#41;</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; <span class="re1">@name</span> = name<br />
+							&nbsp; &nbsp; &nbsp; &nbsp; <span class="re1">@start_date</span> = start_date<br />
+							&nbsp; &nbsp; &nbsp; &nbsp; <span class="re1">@dogtags</span> = <span class="kw2">false</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; <span class="re1">@this_day</span> = <span class="kw2">nil</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; <span class="re1">@this_week</span> = week<br />
+							&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">unless</span> <span class="re1">@dogtags</span> == <span class="kw2">true</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw3">puts</span> <span class="st0">&quot;<span class="es0">\n</span>This is week ##{@this_week} and this is day ##{@this_day}&quot;</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw3">puts</span> <span class="st0">&quot;#{@name} will receive his/her Dev Bootcamp Dogtags in #{126 - @this_day} days&quot;</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw3">puts</span> <span class="st0">&quot;<span class="es0">\n</span>Would you like to see #{@name}'s schedule for today?&quot;</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; choice = <span class="kw3">gets</span>.<span class="kw3">chomp</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; day <span class="kw1">if</span> choice.<span class="me1">downcase</span> == <span class="st0">&quot;yes&quot;</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span> <br />
+							&nbsp; &nbsp; <span class="kw1">end</span><br />
+							<br />
+							&nbsp; &nbsp; <span class="kw1">def</span> day<br />
+							&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw3">puts</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; eat<span class="br0">&#40;</span><span class="st0">&quot;Breakfast&quot;</span>, <span class="nu0">0.75</span><span class="br0">&#41;</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; code<span class="br0">&#40;</span><span class="nu0">4</span><span class="br0">&#41;</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; eat<span class="br0">&#40;</span><span class="st0">&quot;Lunch&quot;</span>, <span class="nu0">1.25</span><span class="br0">&#41;</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; code<span class="br0">&#40;</span><span class="nu0">5</span><span class="br0">&#41;</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; eat<span class="br0">&#40;</span><span class="st0">&quot;Supper&quot;</span>, <span class="nu0">1.0</span><span class="br0">&#41;</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; code<span class="br0">&#40;</span><span class="nu0">5</span><span class="br0">&#41;</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw3">sleep</span><span class="br0">&#40;</span><span class="nu0">7</span><span class="br0">&#41;</span><br />
+							&nbsp; &nbsp; <span class="kw1">end</span><br />
+							<br />
+							&nbsp; &nbsp; <span class="kw1">def</span> sleep_faster<br />
+							&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw3">puts</span> <span class="st0">&quot;<span class="es0">\n</span>How many hours does #{@name} like to sleep each night? &quot;</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; preferred_sleep_hours = <span class="kw3">gets</span>.<span class="kw3">chomp</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> preferred_sleep_hours.<span class="me1">to_i</span> <span class="sy0">&gt;</span> <span class="nu0">7</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw3">puts</span> <span class="st0">&quot;<span class="es0">\n</span><span class="es0">\&quot;</span>My advice would be to sleep faster<span class="es0">\&quot;</span> - Arnold Schwarzenegger&quot;</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">else</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw3">puts</span> <span class="st0">&quot;#{@name} will get plenty of sleep at Dev Bootcamp&quot;</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br />
+							&nbsp; &nbsp; <span class="kw1">end</span><br />
+							<br />
+							&nbsp; &nbsp; <span class="kw1">def</span> <span class="kw3">sleep</span><span class="br0">&#40;</span>hours<span class="br0">&#41;</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; sleep_faster <span class="kw1">if</span> hours <span class="sy0">&lt;</span> <span class="nu0">8</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw3">puts</span> <span class="st0">&quot;<span class="es0">\n</span>7.0 hr: Sleep<span class="es0">\n</span><span class="es0">\n</span>&quot;</span><br />
+							&nbsp; &nbsp; <span class="kw1">end</span><br />
+							<br />
+							&nbsp; &nbsp; <span class="kw1">def</span> eat<span class="br0">&#40;</span>meal, time<span class="br0">&#41;</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw3">puts</span> <span class="st0">&quot;#{time} hr: #{meal}&quot;</span><br />
+							&nbsp; &nbsp; <span class="kw1">end</span><br />
+							<br />
+							&nbsp; &nbsp; <span class="kw1">def</span> code<span class="br0">&#40;</span>hours<span class="br0">&#41;</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; hours.<span class="me1">times</span> <span class="br0">&#123;</span> <span class="kw3">puts</span> <span class="st0">&quot;1.0 hr: Coding...&quot;</span> <span class="br0">&#125;</span><br />
+							&nbsp; &nbsp; <span class="kw1">end</span><br />
+							<br />
+							&nbsp; &nbsp; <span class="kw1">def</span> week<br />
+							&nbsp; &nbsp; &nbsp; &nbsp; <span class="re1">@this_day</span> = <span class="br0">&#40;</span><span class="kw4">DateTime</span>.<span class="me1">now</span> <span class="sy0">-</span> <span class="re1">@start_date</span><span class="br0">&#41;</span>.<span class="me1">to_i</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; this_week = <span class="br0">&#40;</span><span class="br0">&#40;</span><span class="kw4">DateTime</span>.<span class="me1">now</span> <span class="sy0">-</span> <span class="re1">@start_date</span><span class="br0">&#41;</span>.<span class="me1">ceil</span>.<span class="me1">to_i</span> <span class="sy0">/</span> <span class="nu0">7</span><span class="br0">&#41;</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> this_week <span class="sy0">&gt;</span> <span class="nu0">18</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="re1">@dogtags</span> = <span class="kw2">true</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; get_your_dogtags<br />
+							&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; this_week<br />
+							&nbsp; &nbsp; <span class="kw1">end</span><br />
+							<br />
+							&nbsp; &nbsp; <span class="kw1">def</span> get_your_dogtags<br />
+							&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw3">puts</span> <span class="st0">&quot;<span class="es0">\n</span>Has #{@name} completed all of their work at Dev Bootcamp? &quot;</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; completion = <span class="kw3">gets</span>.<span class="kw3">chomp</span>.<span class="me1">downcase</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> completion == <span class="st0">&quot;yes&quot;</span> <span class="sy0">&amp;&amp;</span> <span class="re1">@dogtags</span> == <span class="kw2">true</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw3">puts</span> <span class="st0">&quot;<span class="es0">\n</span><span class="es0">\n</span>Yay! #{@name} has earned his/her Dogtags!<span class="es0">\n</span><span class="es0">\n</span><span class="es0">\n</span>&quot;</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">else</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw3">puts</span> <span class="st0">&quot;Sorry, #{@name} has not met all of the requirements to receive his/her Dogtags yet.&quot;</span><br />
+							&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br />
+							&nbsp; &nbsp; <span class="kw1">end</span><br />
+							<br />
+							<span class="kw1">end</span><br />
+							<br />
+							<span class="kw3">puts</span> <span class="st0">&quot;Name: &quot;</span><br />
+							name = <span class="kw3">gets</span>.<span class="kw3">chomp</span><br />
+							<br />
+							<span class="kw3">puts</span> <span class="st0">&quot;Phase 0 Start Date (MM/DD/YYYY): &quot;</span><br />
+							date = <span class="kw3">gets</span>.<span class="kw3">chomp</span><br />
+							<br />
+							date = date.<span class="kw3">split</span><span class="br0">&#40;</span><span class="st0">&quot;/&quot;</span><span class="br0">&#41;</span><br />
+							month = date<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span>.<span class="me1">to_i</span><br />
+							day = date<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span>.<span class="me1">to_i</span><br />
+							year = date<span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span>.<span class="me1">to_i</span><br />
+							<br />
+							start_date = <span class="kw4">DateTime</span>.<span class="me1">new</span><span class="br0">&#40;</span>year,month,day,<span class="nu0">12</span>,<span class="nu0">0</span><span class="br0">&#41;</span><br />
+							boot = Boot.<span class="me1">new</span><span class="br0">&#40;</span>name, start_date<span class="br0">&#41;</span><br />
+							<br />
+							<span class="kw3">puts</span> boot.<span class="me1">get_your_dogtags</span></div>
+
+
+							  <p class="code-bottom-left">Line yy, Column xx</p>
+							  <p class="code-bottom-right">Spaces: 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RUBY</p>
+
+							</div>
+
+							<p>We start off with the 'initialize' method. This is a special method that runs automatically when an object of this class is instantiated. So, when we call 'Boot.new(name, start_date)' we are instantiating a new object with a Class of Boot. Everything in the 'initialize' method is run immediately including any methods which are called inside the 'initialize' method.</p>
+							<p>Any of the methods defined inside the Class are also available to be called on the object outside of the class. I think you can see now why the ability to create Classes is so powerful. They allow us to add a great deal of complexity to a program with a very simple call.</p>
+							<p>On the last line in this code snippet, we call 'get_your_dogtags' from outside the class, on our 'boot' variable which is holding an instance of the 'Boot' Class. As we already have an instance of the class, we can very easily access this method with dot notation and find out if, in fact, our current boot has earned their dogtags.</p>
+							<p>Use of the instance variable is very important in a Class. If you define a local variable inside a method, it will not be available in the rest of the Class. In order to be able to access a variable anywhere in the Class you must designate it as such with an '@' symbol as the first character.</p>
+							<p>Any arguments which are passed in during instantiation are passed to the 'initialize' method and it is typical to initialize new instance variables with the same name as the local argument variable. This is good practice and ensures that these variables will be accessible in the entire class. It is also possible to initialize instance variables outside of the 'initialize' method.</p>
+							<p>The more you use Classes, the more you will understand them. If you are still struggling to wrap your head around this, try to pick a real world object and start replacing elements of this Class with whatever object you want to model. With a little experimentation, you should start to understand how and why Class is so powerful and important in the Ruby language.
+
+							&nbsp;
+							<hr>
+							&nbsp;
+							<p><em>Let's do something <strong>EPIC!</strong></em></p>
+
+							<!-- <hr>
+							&nbsp
+							<h3 class="sub-headline">SUB HEADLINE 2</h3>
+
+							<div>
+							&nbsp
+							<h3><a href="http://mashable.com/" target="_blank">LINK HEADLINE</a></h3>
+							<p class="left"><div class="article-img"><img src="../images/mashable-thmb.jpg" alt"Mashable.com"><p class="article-img-caption">INLINE THUMBNAIL CAPTION</p></div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, maxime commodi tempora sunt ullam ea doloremque delectus quos labore laborum voluptate non est unde magni corporis nihil officia dolores expedita.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eaque nobis ab ipsa magni autem officia impedit quos minus, repellendus facere aperiam aut maiores alias dicta assumenda. Provident, dolore, voluptatem.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus incidunt, nam assumenda sequi tenetur aperiam tempora laboriosam. Vel minima eius, minus debitis pariatur, voluptatem, autem molestias molestiae rem assumenda porro?</p>
+							</div>
+							<img class="full-size" src="../images/mashable-menu.jpg" alt="Mashable.com">
+							&nbsp&nbsp
+							<hr>
+							<div>
+							&nbsp
+							<h3><a href="http://mashable.com/" target="_blank">LINK HEADLINE</a></h3>
+							<p class="left"><div class="article-img"><img src="../images/mashable-thmb.jpg" alt"Mashable.com"><p class="article-img-caption">INLINE THUMBNAIL CAPTION</p></div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, maxime commodi tempora sunt ullam ea doloremque delectus quos labore laborum voluptate non est unde magni corporis nihil officia dolores expedita.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eaque nobis ab ipsa magni autem officia impedit quos minus, repellendus facere aperiam aut maiores alias dicta assumenda. Provident, dolore, voluptatem.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus incidunt, nam assumenda sequi tenetur aperiam tempora laboriosam. Vel minima eius, minus debitis pariatur, voluptatem, autem molestias molestiae rem assumenda porro?</p>
+							</div>
+							<img class="full-size" src="../images/mashable-menu.jpg" alt="Mashable.com">
+							&nbsp&nbsp
+							<hr>
+							&nbsp -->
+						</div>
+						<!-- End of Main Article -->
+						
+					</div>
+
+
+				</article>
+				
+			</section>
+
+			<!-- nav drop down menu -->
+			<aside id="drop-down">
+				
+			</aside>
+		</div>
+		
+	</div>
+	<footer>
+		<!-- footer -->
+	</footer>
+</body>
+
+
+
+
+
+
+
+
+</html>
