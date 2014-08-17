@@ -238,6 +238,10 @@ header {
 	padding: 0;
 }
 
+.tweet {
+	padding: 5%;
+}
+
 .feature-caption {
 	position: relative;
 	top: -10px;
