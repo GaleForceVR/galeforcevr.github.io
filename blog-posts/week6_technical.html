@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- ******* Page Title Goes Here CHANGE THIS FOR EACH NEW PAGE ********  -->
+	<title>Modules vs. Classes in Ruby</title>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+<body>
+<!-- 	<div class="gale"></div> -->
+	<!-- header -->
+	<header>
+		<div class="logo"><a href="../index.html"><img src="../images/galeforcevr-logo.png" alt="GaleForceVR Logo"></a></div>
+		<!-- main navigation -->
+		<nav class="main-nav"> 
+			<ul>
+				<li><a href="../index.html">HOME</a></li>
+				<li><a href="../blog.html">BLOG</a></li>
+				<li><a href="mailto:galeforcevr@gmail.com?subject=GaleForceVR Blog Site">CONTACT</a></li>
+			</ul>
+		</nav>
+		<!-- social nav -->
+		<div class="social">
+			<ul>
+				<li><a href="https://github.com/GaleForceVR" target="_blank"><img src="../images/social-github.png" alt="github"></a></li>
+				<li><a href="https://twitter.com/GaleForceVR" target="_blank"><img src="../images/social-twitter.png" alt="twitter"></a></li>
+				<li><a href="https://plus.google.com/u/0/+GaleVanRossemDBC/" target="_blank"><img src="../images/social-googleplus.png" alt="google+"></a></li>
+				<li><a href="https://www.facebook.com/Gale.Force.VR" target="_blank"><img src="../images/social-facebook.png" alt="facebook"></a></li>
+				<li><a href="http://www.linkedin.com/in/galeforcevr/" target="_blank"><img src="../images/social-linkedin.png" alt="linked-in"></a></li>
+			</ul>
+		</div>
+		
+	</header>
+	<div class="gale"></div>
+
+	<!-- main content -->
+
+	<div class="wrapper">
+		
+		<div id="main">
+			<!-- main article/content -->
+			<section id="content">
+				<!-- blog post -->
+				<article class="blog-post">
+					<!--  ********* headline CHANGE FOR EACH NEW POST ********* -->
+					<h1 class="blog-post-title">Modules and Classes aren't as similar as they appear in Ruby</h1>
+
+					<div class="story">
+						<!-- feature image and wrapper -->
+						<!-- ********* Feature Image CHANGE FOR EACH NEW POST ********* -->
+						<div class="feature">
+							<img src="../images/class-vs-module.jpg" alt"When to use a Class or a Module in Ruby">
+							<p class="feature-caption">Should you use a Class or a Module?</p>
+						</div>
+						<!-- ********* Main Article CHANGE FOR EACH NEW POST ********* -->
+						<div class="inner-wrapper">
+							<!-- sub-headline -->
+							<!-- <h3 class="sub-headline">As internet connection speeds and display quality increase visual design is becoming more and more important</h3> -->
+
+							<h3 class="sub-headline">Modules and Classes have many distinct features in Ruby</h3>
+
+							<!-- main story -->
+							<p>At first glance, it may seem as though Modules and Classes perform the same function in a Ruby program. In reality, there are many very important distinctions between the two.</p>
+							<p>The first main difference you need to understand is that Classes allow instantiation of an object. Modules cannot do this. Thus, Classes give us the ability to create objects, whereas Modules perform more as a library of methods and Classes.</p>
+							<p>As such, Modules can be included in classes or modules. A Class that is inside a module can be included via inclusion of the module, but cannot be included directly.</p>
+							<p>Both Classes and Modules can contain methods. So, where would we use a Class instead of a Module? The main usage of a Class is to create an object. When we have an object that needs to be modeled, we are going to use a class. If we need to have instances of that object, we clearly need a class. If we simply need a method or methods that will be called in multiple areas of our code or if we need to namespace our variables, we are going to use a Module.</p>
+							<p>Namespacing, and/or organization of code is one of the main uses for Modules. If you are creating code that may be used by many developers in different applications, namespacing becomes very important to ensure that none of your variables end up conflicting with variables in other parts of an applications code.</p>
+							<p>The other major difference between the two is inheritance. As is well known, Classes in Ruby have the ability to inherit behavior and pass behavior on to children. Modules, on the other hand do not have the ability to inherit behavior.</p>
+							<p>In summary, use Modules to namespace and organize libraries of code which may include Classes. Use Classes any time that you need to create an object. Understanding the differences between the two is essential to write good code in Ruby.</p>
+							
+							&nbsp;
+							<hr>
+							&nbsp;
+							<p><em>Let's do something <strong>EPIC!</strong></em></p>
+
+							
+						</div>
+						<!-- End of Main Article -->
+						
+					</div>
+
+
+				</article>
+				
+			</section>
+
+			<!-- nav drop down menu -->
+			<aside id="drop-down">
+				
+			</aside>
+		</div>
+		
+	</div>
+	<footer>
+		<!-- footer -->
+	</footer>
+</body>
+
+
+
+
+
+
+
+
+</html>
