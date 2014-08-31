@@ -254,6 +254,16 @@ header {
 	padding: 0 30px 10px 5%;
 }
 
+.feature-caption span {
+	color: #666666; 
+	font-size: .65em;
+}
+
+.feature-caption a {
+	color: grey;
+}
+
+
 .story {
 	background: white;
 	/*margin: 5%;*/

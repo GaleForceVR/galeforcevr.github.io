@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- ******* Page Title Goes Here CHANGE THIS FOR EACH NEW PAGE ********  -->
+	<title>SQL injection and how to prevent it</title>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+<body>
+<!-- 	<div class="gale"></div> -->
+	<!-- header -->
+	<header>
+		<div class="logo"><a href="../index.html"><img src="../images/galeforcevr-logo.png" alt="GaleForceVR Logo"></a></div>
+		<!-- main navigation -->
+		<nav class="main-nav"> 
+			<ul>
+				<li><a href="../index.html">HOME</a></li>
+				<li><a href="../blog.html">BLOG</a></li>
+				<li><a href="mailto:galeforcevr@gmail.com?subject=GaleForceVR Blog Site">CONTACT</a></li>
+			</ul>
+		</nav>
+		<!-- social nav -->
+		<div class="social">
+			<ul>
+				<li><a href="https://github.com/GaleForceVR" target="_blank"><img src="../images/social-github.png" alt="github"></a></li>
+				<li><a href="https://twitter.com/GaleForceVR" target="_blank"><img src="../images/social-twitter.png" alt="twitter"></a></li>
+				<li><a href="https://plus.google.com/u/0/+GaleVanRossemDBC/" target="_blank"><img src="../images/social-googleplus.png" alt="google+"></a></li>
+				<li><a href="https://www.facebook.com/Gale.Force.VR" target="_blank"><img src="../images/social-facebook.png" alt="facebook"></a></li>
+				<li><a href="http://www.linkedin.com/in/galeforcevr/" target="_blank"><img src="../images/social-linkedin.png" alt="linked-in"></a></li>
+			</ul>
+		</div>
+		
+	</header>
+	<div class="gale"></div>
+
+	<!-- main content -->
+
+	<div class="wrapper">
+		
+		<div id="main">
+			<!-- main article/content -->
+			<section id="content">
+				<!-- blog post -->
+				<article class="blog-post">
+					<!--  ********* headline CHANGE FOR EACH NEW POST ********* -->
+					<h1 class="blog-post-title">SQL injection and how to prevent it</h1>
+
+					<div class="story">
+						<!-- feature image and wrapper -->
+						<!-- ********* Feature Image CHANGE FOR EACH NEW POST ********* -->
+						<div class="feature">
+							<img src="../images/sql-injection.jpg" alt"SQL Injection is a serious vulnerability.">
+							<p class="feature-caption">Help Stop SQL Injection<span>"<a href="http://commons.wikimedia.org/wiki/File:Syringe2.jpg#mediaviewer/File:Syringe2.jpg">Syringe2</a>". Licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a> via <a href="//commons.wikimedia.org/wiki/">Wikimedia Commons</a>.</span></p>
+						</div>
+						<!-- ********* Main Article CHANGE FOR EACH NEW POST ********* -->
+						<div class="inner-wrapper">
+							<!-- sub-headline -->
+							<!-- <h3 class="sub-headline">As internet connection speeds and display quality increase visual design is becoming more and more important</h3> -->
+
+							<h3 class="sub-headline">SQL injection can cause real harm if you don't take the necessary precautions to prevent it</h3>
+
+							<!-- main story -->
+							<h4>What is it?</h4>
+							<p>SQL injection is a vulnerability where a user can inject valid SQL code into a user input field to manipulate or attack a SQL database. Any SQL database that does not use certain security best practices is vulnerable.</p>
+							<p>SQL injection is one of the top website security vulnerabilities.</p>
+							<h4>What can programmers do to combat this issue?</h4>
+							<p>The only way to prevent the success of SQL injection attacks is to use SQL parameters. The practice of "blacklisting" certain words is not a good idea as many of these words are necessary as valid input in a text field.</p>
+							<p>Building queries with parameters in SQL is not particularily difficult, but does differ depending on which language you are coding in. You should look up syntax for specific languages for more detailed information.</p>
+							<p>In general, you will use a ? as a marker for the injectible input. You can then sanitize the input before injecting it. Thus removing the ability of a hacker to access the database with a string of executable code.</p>
+
+							&nbsp;
+							<hr>
+							&nbsp;
+							<p><em>Let's do something <strong>EPIC!</strong></em></p>
+							
+						<!-- End of Main Article -->
+						
+					</div>
+
+
+				</article>
+				
+			</section>
+
+			<!-- nav drop down menu -->
+			<aside id="drop-down">
+				
+			</aside>
+		</div>
+		
+	</div>
+	<footer>
+		<!-- footer -->
+	</footer>
+</body>
+
+
+
+
+
+
+
+
+</html>
