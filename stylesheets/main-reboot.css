@@ -281,9 +281,9 @@ nav ul li a:hover {
 	height: 200px;
 	width: 32%;
 	padding: 80px 1.5% 0 1.5%;
-	background-color: #454545;
+	/*background-color: #454545;*/
 	z-index: 3;
-	display: none;
+	/*display: none;*/
 }
 
 .upside h1 {
@@ -299,8 +299,8 @@ nav ul li a:hover {
 
 .upside ul li a {
 	text-decoration: none;
-	color: #34dcd2;
-	text-shadow: 1px 2px 2px black;
+	color: #ae0202;
+	/*text-shadow: 1px 2px 2px black;*/
 }
 
 .shark-fin-under {
